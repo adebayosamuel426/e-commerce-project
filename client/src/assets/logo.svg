@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="300" height="100" viewBox="0 0 300 100" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Background -->
+    <rect width="100%" height="100%" fill="white"/>
+    
+    <!-- Stylish Text -->
+    <text x="50%" y="50%" font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="black" text-anchor="middle" dominant-baseline="middle">
+        FreshCollection
+    </text>
+    
+    <!-- Fashion Icon - Minimalist Hanger -->
+    <path d="M130 50 Q150 20 170 50" stroke="black" stroke-width="3" fill="none"/>
+    <circle cx="150" cy="20" r="5" fill="black"/>
+</svg>
