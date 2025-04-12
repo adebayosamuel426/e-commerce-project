@@ -5,7 +5,7 @@ const Wrapper = styled.div `
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: translate(30%, 15%);
+  transform: translate(20%, 20%);
   .container{
   display: flex;
   flex-direction: column;
@@ -16,10 +16,10 @@ const Wrapper = styled.div `
   }
 
   h1 {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   text-align: center;
   font-weight: bold;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   }
   .sub-container {
     width: 100%;

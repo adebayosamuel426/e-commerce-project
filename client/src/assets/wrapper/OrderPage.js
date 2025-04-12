@@ -6,17 +6,17 @@ const Wrapper = styled.div `
   .container{
   position: absolute;
   top: 160px;
-  left: 30%;
+  left: 18%;
   background-color: var(--background-color);
   box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.8);
-  width: 100vw;
-  padding: 2rem;
+  width: 90%;
+  padding: 2rem 4rem;
   }
   table{
-  width: 100%;
+  width: 90%;
   }
   thead{
-  width: 100%;
+  width: 90%;
   }
   th, td {
   padding: 1rem;

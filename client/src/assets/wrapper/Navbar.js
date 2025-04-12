@@ -5,7 +5,8 @@ const Wrapper = styled.nav `
   box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.1);
   background: var(--background-secondary-color);
   padding-bottom: 8rem;
-  position: sticky;
+   padding-right: 2rem;
+  position: fixed;
   width: 100%;
   z-index: 100;
   .navHead{
@@ -23,7 +24,7 @@ const Wrapper = styled.nav `
   position: relative;
 }
 .searchInput{
-  width: 35rem;
+  width: 25rem;
   height: 3rem;
   font-size: 1.5rem; 
   padding: 0 2rem;
@@ -36,7 +37,7 @@ const Wrapper = styled.nav `
   margin-top: 5px;
   position: absolute;
   padding-left: 5px;
-  padding-top: 5px;
+  padding-top: 4px;
 };
 .searchDiv .searchIcon:hover {
   color: var(--primary-color);
@@ -70,17 +71,22 @@ const Wrapper = styled.nav `
   background: var(--black);
   right: 10%;
   top: 2px;
+  font-size:0.5;
   }
   .btn-1,.btn-2 {
-  padding: 1rem;
+  padding: 0.5rem 1rem;
+
   color: var(--black);
-  margin: 10px;
+  margin-top: 20px;
+  margin-left: 1rem;
   background: var(--primary-50);
-  font-size: 1.2rem;
+  font-size: 1.0rem;
   border: none;
   font-weight: bold;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   cursor: pointer;
+  height:3rem;
+ 
   transition: background-color 0.3s ease-in-out;
    box-shadow: var(--shadow-2);
   }
@@ -97,7 +103,8 @@ const Wrapper = styled.nav `
    margin-left: auto;
    margin-right: auto;
    margin-top: 5px;
-   padding-bottom: -20px;
+   margin-bottom: 5px;
+   
    }
    .category{
     background: transparent;

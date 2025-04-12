@@ -1,18 +1,19 @@
 import styled from "styled-components";
 
 const Wrapper = styled.div `
-  width: calc(100% - 30%);
+  width: calc(100% - 40%);
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: translate(20%, 45%);
+  transform: translate(10%, 45%);
+ 
   .container{
   display: flex;
   flex-direction: column;
-  background-color: var(--background-color);
-  //box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.8);
   width: 90%;
-  padding: 2rem;
+  padding: 2rem 0rem;
+   background-color: transparent;
+  z-index: -100;
   }
 
   h1 {

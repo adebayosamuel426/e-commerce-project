@@ -4,14 +4,15 @@ const Wrapper = styled.section `
   min-height: 100vh;
   display: grid;
   align-items: center;
+  transform: translate(0%, 5%);
   .form {
-    max-width: 800px;
+    max-width: 700px;
     border-top: 5px solid var(--primary-500);
   }
   h4 {
     text-align: center;
     margin-bottom: 1.38rem;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     
   }
   p {

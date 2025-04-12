@@ -11,7 +11,7 @@ const Wrapper = styled.div `
       padding: 2rem;
       position: absolute;
       top: 200px;
-      left: 40%;
+      left: 30%;
       background-color: var(--background-color);
       box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.8);
       width: 90%;
