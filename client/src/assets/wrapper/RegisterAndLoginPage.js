@@ -1,13 +1,14 @@
 import styled from 'styled-components';
 
 const Wrapper = styled.section `
-  min-height: 100vh;
   display: grid;
   align-items: center;
-  transform: translate(0%, 5%);
+  transform: translate(30%, 25%);
+ width: calc(100% - 40%);
   .form {
-    max-width: 700px;
+    margin-bottom: 2rem;
     border-top: 5px solid var(--primary-500);
+    margin-top: 4rem;
   }
   h4 {
     text-align: center;

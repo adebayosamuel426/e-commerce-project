@@ -38,7 +38,7 @@ const AllCategories = () => {
           {filterCategories.map((category) => (
             <div key={category.id} className='category'>
               <h4>{category.name}</h4>
-              <div>
+              <div className='sub-category'>
                 <button
                   onClick={() => {
                     getCategoryId(category.id);

@@ -5,40 +5,45 @@ const Wrapper = styled.div `
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: translate(10%, 45%);
+  transform: translate(40%, 45%);
  
   .container{
   display: flex;
   flex-direction: column;
-  width: 90%;
+   justify-content: center;
+  align-items: center;
   padding: 2rem 0rem;
-   background-color: transparent;
   z-index: -100;
   }
 
   h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   text-align: center;
   font-weight: bold;
   margin-bottom: 2rem;
   }
+  h4{
+  margin-right: 2rem;
+  }
   .sub-container {
-    width: 100%;
     padding: 2rem;
-    margin-left: 15rem;
-    
   }
  .category {
   display: flex;
   justify-content: space-between;
-  margin: 1rem;
+  margin: 2rem 6rem;
+  
+  }
+
+  .sub-category{
+    margin-right: 1rem;
   }
   button{
   background-color: var(--primary-50);
   padding: 1rem;
   border-radius: 1rem;
   border: none;
-  margin: 0 1rem;
+  margin: 0 2rem;
   cursor: pointer;
   font-size: 1.2rem;
   }

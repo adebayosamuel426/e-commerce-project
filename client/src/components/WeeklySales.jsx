@@ -21,7 +21,7 @@ const WeeklySales = () => {
     queryFn: fetchWeeklySales,
   });
 
-  if (isLoading) return <p>Loading chart...</p>;
+  if (isLoading) return <p className='loading'></p>;
 
   const labels = data.map((item) => new Date(item.date).toLocaleDateString());
   const salesData = data.map((item) => parseFloat(item.total_sales));

@@ -40,7 +40,7 @@ const AddCategory = () => {
 
   return (
     <Wrapper>
-      <Form method='post' className='form' onSubmit={handleSubmit}>
+      <from method='post' className='form' onSubmit={handleSubmit}>
         <h2>Add Category</h2>
         <div className='form-row'>
           <label htmlFor='name' className='form-label'>
@@ -56,7 +56,7 @@ const AddCategory = () => {
           />
         </div>
         <SubmitBtn />
-      </Form>
+      </from>
     </Wrapper>
   );
 };

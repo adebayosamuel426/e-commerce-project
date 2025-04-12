@@ -11,13 +11,13 @@ const Wrapper = styled.div `
   align-item: center;
   top: 10%;
   left:20%;
-  margin-top: 100px;
+  margin-top: 40px;
 }
 
 .chart-container {
   width: 40vw;
   max-width: 800px;
-  margin: 2rem auto;
+  margin: 1rem auto;
   color: black;
 }
 `

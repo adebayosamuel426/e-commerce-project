@@ -22,7 +22,7 @@ const WeeklyUsers = () => {
     queryFn: fetchWeeklyUsers,
   });
 
-  if (isLoading) return <p>Loading user chart...</p>;
+  if (isLoading) return <p></p>;
 
   const labels = data.map((item) => new Date(item.date).toLocaleDateString());
   const userData = data.map((item) => parseInt(item.total_users));
