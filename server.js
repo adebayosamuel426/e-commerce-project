@@ -29,7 +29,10 @@ app.use(cors({
     credentials: true,
 }));
 
-
+const allowedOrigins = [
+    "http://localhost:5173", // for development
+    process.env.CLIENT_URL // for production (set this on Render)
+];
 
 // Socket.io setup
 const httpServer = createServer(app); // Wrap express with http server
