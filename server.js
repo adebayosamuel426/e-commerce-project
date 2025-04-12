@@ -24,15 +24,22 @@ app.use(helmet());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true })); // ✅ Parses form data
 app.use(cookieParser());
-app.use(cors({
-    origin: process.env.CLIENT_URL,
-    credentials: true,
-}));
+
 
 const allowedOrigins = [
     "http://localhost:5173", // for development
     process.env.CLIENT_URL // for production (set this on Render)
 ];
+app.use(cors({
+    origin: function(origin, callback) {
+        if (!origin || allowedOrigins.includes(origin)) {
+            callback(null, true);
+        } else {
+            callback(new Error("Not allowed by CORS"));
+        }
+    },
+    credentials: true,
+}));
 
 // Socket.io setup
 const httpServer = createServer(app); // Wrap express with http server
