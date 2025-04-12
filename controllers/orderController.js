@@ -106,7 +106,7 @@ const createOrder = async(req, res) => {
             created_at: new Date().toISOString(),
         });
         // invalidating the orders in the cache for new updates
-        await redis.del(`users:${user_id}`);
+        await redis.del(`userOrders:${user_id}`);
         await redis.del(`usersOrders:${user_id}`);
         await redis.del('allOrders')
         await redis.del('weeklySales')
@@ -148,7 +148,7 @@ const getAllOrders = async(req, res) => {
 const getUserOrders = async(req, res) => {
     const { id: userId } = req.user;
 
-    const cacheKey = `users/${userId}`;
+    const cacheKey = `userOrders/${userId}`;
     const cacheOrders = await redis.get(cacheKey);
     if (cacheOrders) {
         return res.status(StatusCodes.OK).json({ orders: JSON.parse(cacheOrders), message: "these are your orders fetched from cache" });
