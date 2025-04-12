@@ -1,16 +1,19 @@
 import styled from "styled-components";
 
 const Wrapper = styled.nav `
-  height: var(--nav-height);
+  max-height: var(--nav-height);
   box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.1);
   background: var(--background-secondary-color);
   padding-bottom: 8rem;
-  position: fixed;
-  width: 100vw;
+  position: sticky;
+  width: 100%;
   z-index: 100;
+  .navHead{
+  width: 90%;
+  }
 .nav-1{
     display: flex;
-    width: 90vw;
+    width: 100%;
     align-items: center;
     justify-content: space-between;
     margin-bottom : auto;
@@ -21,7 +24,7 @@ const Wrapper = styled.nav `
 }
 .searchInput{
   width: 35rem;
-  height: 2.8rem;
+  height: 3rem;
   font-size: 1.5rem; 
   padding: 0 2rem;
   border: var(--border-radius) solid var(--grey-300:)

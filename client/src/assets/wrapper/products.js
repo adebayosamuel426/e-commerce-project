@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
 const Wrapper = styled.div `
-  width: 90vw;
+  width: 90%;
   position: absolute;
   top:130px;
-  padding: 2rem 2rem;
+  padding: 1rem 1rem;
 
   .products {
   display: grid;
@@ -28,7 +28,7 @@ const Wrapper = styled.div `
     img {
       width: 100%;
       margin: auto;
-      height: 500px;
+      height: 300px;
     }
     img:hover{
       transform: scaleX(1.08);
@@ -47,16 +47,16 @@ const Wrapper = styled.div `
       }
     }
       .btn-3 {
-      padding: 0.8rem 1.5rem;
+      padding: 0.5rem 0.5rem;
       background: var(--primary-50);
-      font-size: 1.2rem;
+      font-size: 1.0rem;
       border: none;
       font-weight: bold;
       border-radius: 1rem;
       transition: background-color 0.3s ease-in-out;
       box-shadow: var(--shadow-2);
       place-items: right;
-      width: 70%;
+      width: 60%;
       padding: 1rem;
       color: var(--black);
       margin-top: 2rem;
