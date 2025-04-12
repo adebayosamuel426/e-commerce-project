@@ -73,6 +73,10 @@ input[type="text"] {
   .delete-btn:hover {
      color: var(--grey-900);
   }
+     span{
+     text-align: center;
+     margin-left: 2rem;
+     }
 `
 
 export default Wrapper;

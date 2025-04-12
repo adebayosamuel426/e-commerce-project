@@ -62,7 +62,7 @@ const AllUsers = () => {
     }, 500),
     []
   );
-
+  const numberOfUsers = allUsers.length;
   // Handle search input changes
   const handleSearchChange = (e) => {
     setQuery(e.target.value);
@@ -104,6 +104,9 @@ const AllUsers = () => {
               <th>User Email</th>
               <th>User Role</th>
               <th>Date Created</th>
+              <th>
+                No of Users <span>{numberOfUsers}</span>
+              </th>
             </tr>
           </thead>
           <tbody>

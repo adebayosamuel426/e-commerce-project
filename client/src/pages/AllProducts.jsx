@@ -1,4 +1,3 @@
-// import { products } from "../utils/Categories";
 import Wrapper from "../assets/wrapper/AllProducts";
 import { Link, useOutletContext } from "react-router-dom";
 
