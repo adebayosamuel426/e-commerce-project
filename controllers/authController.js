@@ -48,7 +48,11 @@ export const login = async(req, res) => {
     }
 
     const isValidUser = await comparePasswords(password, user.password_hash);
-    if (!isValidUser) throw new UnauthenticatedError('invalid credentials');
+    if (!isValidUser) {
+        return res
+            .status(StatusCodes.UNAUTHORIZED)
+            .json({ message: "Invalid credentials" });
+    }
 
     const token = createJWT({ id: user.id, email: user.email, role: user.role });
 
@@ -56,7 +60,7 @@ export const login = async(req, res) => {
     res.cookie('token', token, {
         httpOnly: true,
         expires: new Date(Date.now() + 48 * 60 * 60 * 1000),
-        secure: process.env.NODE_ENV === 'development',
+        secure: process.env.NODE_ENV === 'production',
         sameSite: 'none',
     })
 

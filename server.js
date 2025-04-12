@@ -32,7 +32,7 @@ app.use(cors({
 
 
 // Socket.io setup
-const httpServer = createServer(app); // Wrap express with http server
+const httpServer = createServer(app);
 const io = new Server(httpServer, {
     cors: {
         origin: process.env.CLIENT_URL,
@@ -46,15 +46,15 @@ let adminSockets = [];
 // Socket.io connection
 io.on("connection", (socket) => {
 
-
+    console.log(" New connection:", socket.id);
     socket.on("admin_join", () => {
         adminSockets.push(socket.id);
-
+        console.log(" Admin joined:", socket.id);
     });
 
     socket.on("disconnect", () => {
         adminSockets = adminSockets.filter((id) => id !== socket.id);
-
+        console.log(" Client disconnected:", socket.id);
     });
 });
 

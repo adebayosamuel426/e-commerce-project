@@ -10,16 +10,15 @@ position: relative;
  left: 20%; 
  display: flex;
  flex-direction: row;
- padding: 2rem;
+ padding: 4rem 2rem;
  border: 1px solid;
  justify-content: space-between;
- width: 80vw;
- height: 80vh;
+ width: 70vw;
  }
 
  img {
  width: 50%;
- height: 600px;
+ height: 500px;
  margin-right: 2rem;
  }
 
@@ -35,20 +34,19 @@ position: relative;
   margin-bottom: 2rem;
  }
   .content p {
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-bottom: 2rem;
   }
 
   .content .btn-3{
-    padding: 2rem;
+    padding: 1rem;
     background-color: var(--primary-50);
-    font-size: 2rem;
+    font-size: 1rem;
     border: none;
     border-radius: 2rem;
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
     cursor: pointer;
     margin-bottom: 2rem;
-    width: 100%;
   }
     .content .btn-3:hover {
     background-color: var(--primary-400);

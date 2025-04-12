@@ -186,8 +186,14 @@ const getWeeklyUsers = async(req, res) => {
      GROUP BY DATE(created_at)
      ORDER BY date ASC`
     );
-    await redis.setex(cacheKey, process.env.REDIS_EXP_TIME, JSON.stringify(users));
-    res.status(StatusCodes.OK).json({ weeklyUsers: users, message: "users weekly stats" });
+
+    const formattedData = users.map((item) => ({
+        ...item,
+        date: new Date(item.date).toLocaleDateString('en-GB'),
+        total_users: parseFloat(item.total_users),
+    }));
+    await redis.setex(cacheKey, process.env.REDIS_EXP_TIME, JSON.stringify(formattedData));
+    res.status(StatusCodes.OK).json({ weeklyUsers: formattedData, message: "users weekly stats" });
 };
 
 

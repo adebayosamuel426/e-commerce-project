@@ -17,7 +17,7 @@ const Wrapper = styled.div `
 .chart-container {
   width: 40vw;
   max-width: 800px;
-  margin: auto;
+  margin: 2rem auto;
   color: black;
 }
 `

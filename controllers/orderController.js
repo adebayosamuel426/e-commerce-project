@@ -278,8 +278,15 @@ const getWeeklySales = async(req, res) => {
      GROUP BY DATE(created_at)
      ORDER BY date ASC`
     );
+
+    const formattedData = sales.map((item) => ({
+        ...item,
+        date: new Date(item.date).toLocaleDateString('en-GB'),
+        total_sales: parseFloat(item.total_sales),
+    }));
+
     //store weekly sales in cache
-    await redis.setex(cacheKey, process.env.REDIS_EXP_TIME, JSON.stringify(sales));
-    res.status(StatusCodes.OK).json({ weeklySales: sales, message: "weekly sales stats" });
+    await redis.setex(cacheKey, process.env.REDIS_EXP_TIME, JSON.stringify(formattedData));
+    res.status(StatusCodes.OK).json({ weeklySales: formattedData, message: "weekly sales stats" });
 };
 export { createOrder, getAllOrders, getUserOrders, getOrderById, updateOrderStatus, getUserOrdersById, updatePaymentStatus, getWeeklySales }

@@ -6,8 +6,7 @@ import Wrapper from "../assets/wrapper/Notification";
 import { Link } from "react-router-dom";
 
 const SOCKET_URL = import.meta.env.VITE_SOCKET_URL;
-const socket = io({
-  SOCKET_URL,
+const socket = io(SOCKET_URL, {
   withCredentials: true,
 }); // Change to your backend in production
 
@@ -17,9 +16,12 @@ const Notification = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const clearTimerRef = useRef(null);
   useEffect(() => {
-    if (!socket.connected) socket.connect();
+    socket.connect();
 
-    socket.emit("admin_join");
+    socket.on("connect", () => {
+      console.log(" Connected to Socket.IO:", socket.id);
+      socket.emit("admin_join");
+    });
 
     const handleNewOrder = (order) => {
       setNotifications((prev) => [order, ...prev]);
