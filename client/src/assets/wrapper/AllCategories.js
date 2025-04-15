@@ -5,7 +5,7 @@ const Wrapper = styled.div `
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: translate(40%, 45%);
+  transform: translate(40%, 40%);
  
   .container{
   display: flex;
