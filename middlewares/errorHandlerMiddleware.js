@@ -5,7 +5,7 @@ const errorHandlerMiddleware = (err, req, res, next) => {
 
     // Log errors only in development
     if (process.env.NODE_ENV === "development") {
-        console.log("❗ Error:", err.message);
+        console.log(" Error:", err.message);
     }
     if (err instanceof CustomError) {
         return res.status(err.statusCode).json({ message: err.message });

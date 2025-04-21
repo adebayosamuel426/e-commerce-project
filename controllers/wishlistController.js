@@ -77,9 +77,12 @@ const getAllProductsFromWishlist = async(req, res) => {
     const cacheKey = `wishlist:${userId}`
     const cachedWishlist = await redis.get(cacheKey);
     if (cachedWishlist) {
+        console.log("Redis HIT:", cacheKey);
         // If cached data exists, return it as JSON
         return res.status(StatusCodes.OK).json({ wishlist: JSON.parse(cachedWishlist), message: "Fetched wishlist from cache" });
     }
+    console.log("Redis MISS:", cacheKey);
+
     // fetch the details from database
     const [fetchUsers] = await pool.query('SELECT * FROM users WHERE id =?', [userId])
 

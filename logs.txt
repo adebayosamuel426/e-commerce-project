@@ -1,0 +1,954 @@
+[33m[nodemon] 3.0.2[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,cjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+Server is running on port 5050
+Connected to Upstash Redis!
+ New connection: xsngYESMsTS7H3zbAAAC
+ New connection: _9ibAcMiTVWUbgo3AAAD
+ Connected to MySQL Database!
+ New connection: J_xtCzUO_xmnVJhQAAAF
+ New connection: Q2zXaJeBR4HoKRu0AAAH
+Redis HIT: all_products
+GET /api/v1/products 200 22768 - 145.740 ms
+Redis HIT: allCategories
+GET /api/v1/categories 304 - - 143.978 ms
+ Client disconnected: Q2zXaJeBR4HoKRu0AAAH
+ New connection: _8Wlas2eo0ZtqoOcAAAJ
+Redis HIT: allCategories
+GET /api/v1/categories 304 - - 51.066 ms
+Redis HIT: all_products
+GET /api/v1/products 304 - - 60.312 ms
+OPTIONS /api/v1/auth/login 204 0 - 1.067 ms
+POST /api/v1/auth/login 200 117 - 337.453 ms
+Token from cookies: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiZW1haWwiOiJzYW11ZWxvd29leWUxMjNAZ21haWwuY29tIiwicm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzQ0NzU5MDI1LCJleHAiOjE3NDczNTEwMjV9.VZYHbyuq3yhOuqt8eBG1j8lf2aBTWpssvzkUAf6mxDQ
+Cookies received: {
+  __stripe_mid: '88a82260-b279-4898-bc81-1dd91232ab59336345',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiZW1haWwiOiJzYW11ZWxvd29leWUxMjNAZ21haWwuY29tIiwicm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzQ0NzU5MDI1LCJleHAiOjE3NDczNTEwMjV9.VZYHbyuq3yhOuqt8eBG1j8lf2aBTWpssvzkUAf6mxDQ',
+  __stripe_sid: 'd0dc05cd-5678-455a-a0a1-37fd0f768514711ad7'
+}
+Redis HIT: all_products
+GET /api/v1/products 304 - - 85.070 ms
+Redis HIT: allCategories
+GET /api/v1/categories 304 - - 84.056 ms
+GET /api/v1/users/profile 200 141 - 520.967 ms
+Token from cookies: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiZW1haWwiOiJzYW11ZWxvd29leWUxMjNAZ21haWwuY29tIiwicm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzQ0NzU5MDI1LCJleHAiOjE3NDczNTEwMjV9.VZYHbyuq3yhOuqt8eBG1j8lf2aBTWpssvzkUAf6mxDQ
+Cookies received: {
+  __stripe_mid: '88a82260-b279-4898-bc81-1dd91232ab59336345',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiZW1haWwiOiJzYW11ZWxvd29leWUxMjNAZ21haWwuY29tIiwicm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzQ0NzU5MDI1LCJleHAiOjE3NDczNTEwMjV9.VZYHbyuq3yhOuqt8eBG1j8lf2aBTWpssvzkUAf6mxDQ',
+  __stripe_sid: 'd0dc05cd-5678-455a-a0a1-37fd0f768514711ad7'
+}
+Redis MISS: wishlist:4
+GET /api/v1/wishlist 200 209 - 886.647 ms
+OPTIONS /api/v1/orders 204 0 - 0.213 ms
+Token from cookies: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiZW1haWwiOiJzYW11ZWxvd29leWUxMjNAZ21haWwuY29tIiwicm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzQ0NzU5MDI1LCJleHAiOjE3NDczNTEwMjV9.VZYHbyuq3yhOuqt8eBG1j8lf2aBTWpssvzkUAf6mxDQ
+Cookies received: {
+  __stripe_mid: '88a82260-b279-4898-bc81-1dd91232ab59336345',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiZW1haWwiOiJzYW11ZWxvd29leWUxMjNAZ21haWwuY29tIiwicm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzQ0NzU5MDI1LCJleHAiOjE3NDczNTEwMjV9.VZYHbyuq3yhOuqt8eBG1j8lf2aBTWpssvzkUAf6mxDQ',
+  __stripe_sid: 'd0dc05cd-5678-455a-a0a1-37fd0f768514711ad7'
+}
+9
+POST /api/v1/orders 201 130 - 6636.177 ms
+Token from cookies: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiZW1haWwiOiJzYW11ZWxvd29leWUxMjNAZ21haWwuY29tIiwicm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzQ0NzU5MDI1LCJleHAiOjE3NDczNTEwMjV9.VZYHbyuq3yhOuqt8eBG1j8lf2aBTWpssvzkUAf6mxDQ
+Cookies received: {
+  __stripe_mid: '88a82260-b279-4898-bc81-1dd91232ab59336345',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiZW1haWwiOiJzYW11ZWxvd29leWUxMjNAZ21haWwuY29tIiwicm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzQ0NzU5MDI1LCJleHAiOjE3NDczNTEwMjV9.VZYHbyuq3yhOuqt8eBG1j8lf2aBTWpssvzkUAf6mxDQ',
+  __stripe_sid: 'd0dc05cd-5678-455a-a0a1-37fd0f768514711ad7'
+}
+OPTIONS /api/v1/orders/payment/9 204 0 - 0.098 ms
+Token from cookies: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiZW1haWwiOiJzYW11ZWxvd29leWUxMjNAZ21haWwuY29tIiwicm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzQ0NzU5MDI1LCJleHAiOjE3NDczNTEwMjV9.VZYHbyuq3yhOuqt8eBG1j8lf2aBTWpssvzkUAf6mxDQ
+Cookies received: {
+  __stripe_mid: '88a82260-b279-4898-bc81-1dd91232ab59336345',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiZW1haWwiOiJzYW11ZWxvd29leWUxMjNAZ21haWwuY29tIiwicm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzQ0NzU5MDI1LCJleHAiOjE3NDczNTEwMjV9.VZYHbyuq3yhOuqt8eBG1j8lf2aBTWpssvzkUAf6mxDQ',
+  __stripe_sid: 'd0dc05cd-5678-455a-a0a1-37fd0f768514711ad7'
+}
+PATCH /api/v1/orders/payment/9 200 53 - 821.538 ms
+Token from cookies: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiZW1haWwiOiJzYW11ZWxvd29leWUxMjNAZ21haWwuY29tIiwicm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzQ0NzU5MDI1LCJleHAiOjE3NDczNTEwMjV9.VZYHbyuq3yhOuqt8eBG1j8lf2aBTWpssvzkUAf6mxDQ
+Cookies received: {
+  __stripe_mid: '88a82260-b279-4898-bc81-1dd91232ab59336345',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiZW1haWwiOiJzYW11ZWxvd29leWUxMjNAZ21haWwuY29tIiwicm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzQ0NzU5MDI1LCJleHAiOjE3NDczNTEwMjV9.VZYHbyuq3yhOuqt8eBG1j8lf2aBTWpssvzkUAf6mxDQ',
+  __stripe_sid: 'd0dc05cd-5678-455a-a0a1-37fd0f768514711ad7'
+}
+Redis HIT: all_products
+GET /api/v1/products 304 - - 52.967 ms
+Redis HIT: allCategories
+GET /api/v1/categories 304 - - 52.743 ms
+Redis HIT: wishlist:4
+GET /api/v1/wishlist 200 215 - 257.176 ms
+GET /api/v1/orders/9 200 993 - 1381.611 ms
+Token from cookies: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiZW1haWwiOiJzYW11ZWxvd29leWUxMjNAZ21haWwuY29tIiwicm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzQ0NzU5MDI1LCJleHAiOjE3NDczNTEwMjV9.VZYHbyuq3yhOuqt8eBG1j8lf2aBTWpssvzkUAf6mxDQ
+Cookies received: {
+  __stripe_mid: '88a82260-b279-4898-bc81-1dd91232ab59336345',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiZW1haWwiOiJzYW11ZWxvd29leWUxMjNAZ21haWwuY29tIiwicm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzQ0NzU5MDI1LCJleHAiOjE3NDczNTEwMjV9.VZYHbyuq3yhOuqt8eBG1j8lf2aBTWpssvzkUAf6mxDQ',
+  __stripe_sid: 'd0dc05cd-5678-455a-a0a1-37fd0f768514711ad7'
+}
+Redis MISS: userOrders/4
+GET /api/v1/orders/user 200 1028 - 621.559 ms
+OPTIONS /api/v1/wishlist 204 0 - 0.568 ms
+Token from cookies: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiZW1haWwiOiJzYW11ZWxvd29leWUxMjNAZ21haWwuY29tIiwicm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzQ0NzU5MDI1LCJleHAiOjE3NDczNTEwMjV9.VZYHbyuq3yhOuqt8eBG1j8lf2aBTWpssvzkUAf6mxDQ
+Cookies received: {
+  __stripe_mid: '88a82260-b279-4898-bc81-1dd91232ab59336345',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiZW1haWwiOiJzYW11ZWxvd29leWUxMjNAZ21haWwuY29tIiwicm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzQ0NzU5MDI1LCJleHAiOjE3NDczNTEwMjV9.VZYHbyuq3yhOuqt8eBG1j8lf2aBTWpssvzkUAf6mxDQ',
+  __stripe_sid: 'd0dc05cd-5678-455a-a0a1-37fd0f768514711ad7'
+}
+2
+Token from cookies: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiZW1haWwiOiJzYW11ZWxvd29leWUxMjNAZ21haWwuY29tIiwicm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzQ0NzU5MDI1LCJleHAiOjE3NDczNTEwMjV9.VZYHbyuq3yhOuqt8eBG1j8lf2aBTWpssvzkUAf6mxDQ
+Cookies received: {
+  __stripe_mid: '88a82260-b279-4898-bc81-1dd91232ab59336345',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiZW1haWwiOiJzYW11ZWxvd29leWUxMjNAZ21haWwuY29tIiwicm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzQ0NzU5MDI1LCJleHAiOjE3NDczNTEwMjV9.VZYHbyuq3yhOuqt8eBG1j8lf2aBTWpssvzkUAf6mxDQ',
+  __stripe_sid: 'd0dc05cd-5678-455a-a0a1-37fd0f768514711ad7'
+}
+POST /api/v1/wishlist 200 72 - 1424.998 ms
+Token from cookies: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiZW1haWwiOiJzYW11ZWxvd29leWUxMjNAZ21haWwuY29tIiwicm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzQ0NzU5MDI1LCJleHAiOjE3NDczNTEwMjV9.VZYHbyuq3yhOuqt8eBG1j8lf2aBTWpssvzkUAf6mxDQ
+Cookies received: {
+  __stripe_mid: '88a82260-b279-4898-bc81-1dd91232ab59336345',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiZW1haWwiOiJzYW11ZWxvd29leWUxMjNAZ21haWwuY29tIiwicm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzQ0NzU5MDI1LCJleHAiOjE3NDczNTEwMjV9.VZYHbyuq3yhOuqt8eBG1j8lf2aBTWpssvzkUAf6mxDQ',
+  __stripe_sid: 'd0dc05cd-5678-455a-a0a1-37fd0f768514711ad7'
+}
+Redis HIT: allCategories
+GET /api/v1/categories 304 - - 58.546 ms
+Redis HIT: all_products
+GET /api/v1/products 304 - - 64.735 ms
+2
+Redis MISS: wishlist:4
+GET /api/v1/wishlist 200 378 - 851.625 ms
+POST /api/v1/wishlist 200 72 - 1881.206 ms
+Token from cookies: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiZW1haWwiOiJzYW11ZWxvd29leWUxMjNAZ21haWwuY29tIiwicm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzQ0NzU5MDI1LCJleHAiOjE3NDczNTEwMjV9.VZYHbyuq3yhOuqt8eBG1j8lf2aBTWpssvzkUAf6mxDQ
+Cookies received: {
+  __stripe_mid: '88a82260-b279-4898-bc81-1dd91232ab59336345',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiZW1haWwiOiJzYW11ZWxvd29leWUxMjNAZ21haWwuY29tIiwicm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzQ0NzU5MDI1LCJleHAiOjE3NDczNTEwMjV9.VZYHbyuq3yhOuqt8eBG1j8lf2aBTWpssvzkUAf6mxDQ',
+  __stripe_sid: 'd0dc05cd-5678-455a-a0a1-37fd0f768514711ad7'
+}
+Redis HIT: allCategories
+GET /api/v1/categories 304 - - 55.035 ms
+Redis HIT: all_products
+GET /api/v1/products 304 - - 57.961 ms
+Redis MISS: wishlist:4
+GET /api/v1/wishlist 200 716 - 923.429 ms
+OPTIONS /api/v1/wishlist 204 0 - 0.687 ms
+Token from cookies: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiZW1haWwiOiJzYW11ZWxvd29leWUxMjNAZ21haWwuY29tIiwicm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzQ0NzU5MDI1LCJleHAiOjE3NDczNTEwMjV9.VZYHbyuq3yhOuqt8eBG1j8lf2aBTWpssvzkUAf6mxDQ
+Cookies received: {
+  __stripe_mid: '88a82260-b279-4898-bc81-1dd91232ab59336345',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiZW1haWwiOiJzYW11ZWxvd29leWUxMjNAZ21haWwuY29tIiwicm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzQ0NzU5MDI1LCJleHAiOjE3NDczNTEwMjV9.VZYHbyuq3yhOuqt8eBG1j8lf2aBTWpssvzkUAf6mxDQ',
+  __stripe_sid: 'd0dc05cd-5678-455a-a0a1-37fd0f768514711ad7'
+}
+DELETE /api/v1/wishlist 200 77 - 1730.725 ms
+Token from cookies: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiZW1haWwiOiJzYW11ZWxvd29leWUxMjNAZ21haWwuY29tIiwicm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzQ0NzU5MDI1LCJleHAiOjE3NDczNTEwMjV9.VZYHbyuq3yhOuqt8eBG1j8lf2aBTWpssvzkUAf6mxDQ
+Cookies received: {
+  __stripe_mid: '88a82260-b279-4898-bc81-1dd91232ab59336345',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiZW1haWwiOiJzYW11ZWxvd29leWUxMjNAZ21haWwuY29tIiwicm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzQ0NzU5MDI1LCJleHAiOjE3NDczNTEwMjV9.VZYHbyuq3yhOuqt8eBG1j8lf2aBTWpssvzkUAf6mxDQ',
+  __stripe_sid: 'd0dc05cd-5678-455a-a0a1-37fd0f768514711ad7'
+}
+Redis HIT: allCategories
+GET /api/v1/categories 304 - - 72.455 ms
+Redis HIT: all_products
+GET /api/v1/products 304 - - 83.445 ms
+Redis MISS: wishlist:4
+GET /api/v1/wishlist 200 209 - 1029.214 ms
+Token from cookies: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiZW1haWwiOiJzYW11ZWxvd29leWUxMjNAZ21haWwuY29tIiwicm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzQ0NzU5MDI1LCJleHAiOjE3NDczNTEwMjV9.VZYHbyuq3yhOuqt8eBG1j8lf2aBTWpssvzkUAf6mxDQ
+Cookies received: {
+  __stripe_mid: '88a82260-b279-4898-bc81-1dd91232ab59336345',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiZW1haWwiOiJzYW11ZWxvd29leWUxMjNAZ21haWwuY29tIiwicm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzQ0NzU5MDI1LCJleHAiOjE3NDczNTEwMjV9.VZYHbyuq3yhOuqt8eBG1j8lf2aBTWpssvzkUAf6mxDQ',
+  __stripe_sid: 'd0dc05cd-5678-455a-a0a1-37fd0f768514711ad7'
+}
+Redis MISS: product:4
+GET /api/v1/products/4 200 408 - 599.695 ms
+GET /api/v1/ratings/4 200 52 - 545.540 ms
+Token from cookies: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiZW1haWwiOiJzYW11ZWxvd29leWUxMjNAZ21haWwuY29tIiwicm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzQ0NzU5MDI1LCJleHAiOjE3NDczNTEwMjV9.VZYHbyuq3yhOuqt8eBG1j8lf2aBTWpssvzkUAf6mxDQ
+Cookies received: {
+  __stripe_mid: '88a82260-b279-4898-bc81-1dd91232ab59336345',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiZW1haWwiOiJzYW11ZWxvd29leWUxMjNAZ21haWwuY29tIiwicm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzQ0NzU5MDI1LCJleHAiOjE3NDczNTEwMjV9.VZYHbyuq3yhOuqt8eBG1j8lf2aBTWpssvzkUAf6mxDQ',
+  __stripe_sid: 'd0dc05cd-5678-455a-a0a1-37fd0f768514711ad7'
+}
+Redis MISS: product:8
+GET /api/v1/products/8 200 426 - 658.459 ms
+GET /api/v1/ratings/8 200 52 - 714.168 ms
+Token from cookies: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiZW1haWwiOiJzYW11ZWxvd29leWUxMjNAZ21haWwuY29tIiwicm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzQ0NzU5MDI1LCJleHAiOjE3NDczNTEwMjV9.VZYHbyuq3yhOuqt8eBG1j8lf2aBTWpssvzkUAf6mxDQ
+Cookies received: {
+  __stripe_mid: '88a82260-b279-4898-bc81-1dd91232ab59336345',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiZW1haWwiOiJzYW11ZWxvd29leWUxMjNAZ21haWwuY29tIiwicm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzQ0NzU5MDI1LCJleHAiOjE3NDczNTEwMjV9.VZYHbyuq3yhOuqt8eBG1j8lf2aBTWpssvzkUAf6mxDQ',
+  __stripe_sid: 'd0dc05cd-5678-455a-a0a1-37fd0f768514711ad7'
+}
+Redis MISS: product:10
+GET /api/v1/products/10 200 643 - 599.504 ms
+GET /api/v1/ratings/10 200 52 - 632.763 ms
+Redis MISS: categoryProducts4
+GET /api/v1/categories/4/products 200 2801 - 468.103 ms
+Token from cookies: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiZW1haWwiOiJzYW11ZWxvd29leWUxMjNAZ21haWwuY29tIiwicm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzQ0NzU5MDI1LCJleHAiOjE3NDczNTEwMjV9.VZYHbyuq3yhOuqt8eBG1j8lf2aBTWpssvzkUAf6mxDQ
+Cookies received: {
+  __stripe_mid: '88a82260-b279-4898-bc81-1dd91232ab59336345',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiZW1haWwiOiJzYW11ZWxvd29leWUxMjNAZ21haWwuY29tIiwicm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzQ0NzU5MDI1LCJleHAiOjE3NDczNTEwMjV9.VZYHbyuq3yhOuqt8eBG1j8lf2aBTWpssvzkUAf6mxDQ',
+  __stripe_sid: 'd0dc05cd-5678-455a-a0a1-37fd0f768514711ad7'
+}
+Redis MISS: product:20
+GET /api/v1/products/20 200 628 - 641.011 ms
+GET /api/v1/ratings/20 200 52 - 566.526 ms
+Token from cookies: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiZW1haWwiOiJzYW11ZWxvd29leWUxMjNAZ21haWwuY29tIiwicm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzQ0NzU5MDI1LCJleHAiOjE3NDczNTEwMjV9.VZYHbyuq3yhOuqt8eBG1j8lf2aBTWpssvzkUAf6mxDQ
+Cookies received: {
+  __stripe_mid: '88a82260-b279-4898-bc81-1dd91232ab59336345',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiZW1haWwiOiJzYW11ZWxvd29leWUxMjNAZ21haWwuY29tIiwicm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzQ0NzU5MDI1LCJleHAiOjE3NDczNTEwMjV9.VZYHbyuq3yhOuqt8eBG1j8lf2aBTWpssvzkUAf6mxDQ',
+  __stripe_sid: 'd0dc05cd-5678-455a-a0a1-37fd0f768514711ad7'
+}
+GET /api/v1/orders/8 200 624 - 1158.311 ms
+Token from cookies: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiZW1haWwiOiJzYW11ZWxvd29leWUxMjNAZ21haWwuY29tIiwicm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzQ0NzU5MDI1LCJleHAiOjE3NDczNTEwMjV9.VZYHbyuq3yhOuqt8eBG1j8lf2aBTWpssvzkUAf6mxDQ
+Cookies received: {
+  __stripe_mid: '88a82260-b279-4898-bc81-1dd91232ab59336345',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiZW1haWwiOiJzYW11ZWxvd29leWUxMjNAZ21haWwuY29tIiwicm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzQ0NzU5MDI1LCJleHAiOjE3NDczNTEwMjV9.VZYHbyuq3yhOuqt8eBG1j8lf2aBTWpssvzkUAf6mxDQ',
+  __stripe_sid: 'd0dc05cd-5678-455a-a0a1-37fd0f768514711ad7'
+}
+Redis MISS: product:1
+GET /api/v1/products/1 200 375 - 683.405 ms
+GET /api/v1/ratings/1 200 182 - 597.868 ms
+GET /api/v1/auth/logout 200 30 - 3.692 ms
+Cookies received: {
+  __stripe_mid: '88a82260-b279-4898-bc81-1dd91232ab59336345',
+  __stripe_sid: 'd0dc05cd-5678-455a-a0a1-37fd0f768514711ad7'
+}
+ Error handler triggered: no token provided
+❗ Error: no token provided
+GET /api/v1/wishlist 401 31 - 0.737 ms
+Redis HIT: allCategories
+GET /api/v1/categories 304 - - 40.031 ms
+Redis HIT: all_products
+GET /api/v1/products 304 - - 86.354 ms
+Redis HIT: categoryProducts4
+GET /api/v1/categories/4/products 200 2808 - 85.397 ms
+OPTIONS /api/v1/auth/login 204 0 - 0.213 ms
+POST /api/v1/auth/login 200 122 - 319.270 ms
+Cookies received: {
+  __stripe_mid: '88a82260-b279-4898-bc81-1dd91232ab59336345',
+  __stripe_sid: 'd0dc05cd-5678-455a-a0a1-37fd0f768514711ad7'
+}
+ Error handler triggered: no token provided
+❗ Error: no token provided
+GET /api/v1/users/profile 401 31 - 0.396 ms
+Redis HIT: categoryProducts4
+Redis HIT: allCategories
+GET /api/v1/categories/4/products 304 - - 108.731 ms
+GET /api/v1/categories 304 - - 107.374 ms
+Redis HIT: all_products
+GET /api/v1/products 304 - - 109.722 ms
+OPTIONS /api/v1/auth/login 204 0 - 0.173 ms
+POST /api/v1/auth/login 200 122 - 291.173 ms
+Cookies received: {
+  __stripe_mid: '88a82260-b279-4898-bc81-1dd91232ab59336345',
+  __stripe_sid: 'd0dc05cd-5678-455a-a0a1-37fd0f768514711ad7'
+}
+ Error handler triggered: no token provided
+❗ Error: no token provided
+GET /api/v1/users/profile 401 31 - 0.326 ms
+Redis HIT: all_products
+GET /api/v1/products 304 - - 53.663 ms
+Redis HIT: allCategories
+GET /api/v1/categories 304 - - 52.228 ms
+ Client disconnected: _8Wlas2eo0ZtqoOcAAAJ
+ New connection: 4KHGLY4TR897pPnWAAAL
+Redis MISS: allCategories
+GET /api/v1/categories 200 160 - 953.887 ms
+Redis HIT: all_products
+GET /api/v1/products 304 - - 101.189 ms
+OPTIONS /api/v1/auth/login 204 0 - 0.142 ms
+POST /api/v1/auth/login 200 117 - 319.193 ms
+Cookies received: {
+  __stripe_mid: '88a82260-b279-4898-bc81-1dd91232ab59336345',
+  __stripe_sid: 'd0dc05cd-5678-455a-a0a1-37fd0f768514711ad7'
+}
+ Error handler triggered: no token provided
+❗ Error: no token provided
+GET /api/v1/users/profile 401 31 - 0.366 ms
+Redis HIT: all_products
+GET /api/v1/products 304 - - 67.534 ms
+Redis HIT: allCategories
+GET /api/v1/categories 200 165 - 66.209 ms
+POST /api/v1/auth/login 200 111 - 396.113 ms
+POST /api/v1/auth/login 200 122 - 293.327 ms
+Token from cookies: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc2NTE0OSwiZXhwIjoxNzQ3MzU3MTQ5fQ.-YzLzJKuDAWQNj0zvm0PGJSd6SR13akcrkXJM_m7e6A
+Cookies received: {
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc2NTE0OSwiZXhwIjoxNzQ3MzU3MTQ5fQ.-YzLzJKuDAWQNj0zvm0PGJSd6SR13akcrkXJM_m7e6A'
+}
+Redis MISS: all_users
+GET /api/v1/users 200 525 - 921.316 ms
+Token from cookies: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc2NTE0OSwiZXhwIjoxNzQ3MzU3MTQ5fQ.-YzLzJKuDAWQNj0zvm0PGJSd6SR13akcrkXJM_m7e6A
+Cookies received: {
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc2NTE0OSwiZXhwIjoxNzQ3MzU3MTQ5fQ.-YzLzJKuDAWQNj0zvm0PGJSd6SR13akcrkXJM_m7e6A'
+}
+Redis MISS: search:te
+GET /api/v1/users/search?query=te 200 283 - 592.959 ms
+Token from cookies: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc2NTE0OSwiZXhwIjoxNzQ3MzU3MTQ5fQ.-YzLzJKuDAWQNj0zvm0PGJSd6SR13akcrkXJM_m7e6A
+Cookies received: {
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc2NTE0OSwiZXhwIjoxNzQ3MzU3MTQ5fQ.-YzLzJKuDAWQNj0zvm0PGJSd6SR13akcrkXJM_m7e6A'
+}
+Redis HIT: search:te
+GET /api/v1/users/search?query=te 200 267 - 290.472 ms
+Token from cookies: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc2NTE0OSwiZXhwIjoxNzQ3MzU3MTQ5fQ.-YzLzJKuDAWQNj0zvm0PGJSd6SR13akcrkXJM_m7e6A
+Cookies received: {
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc2NTE0OSwiZXhwIjoxNzQ3MzU3MTQ5fQ.-YzLzJKuDAWQNj0zvm0PGJSd6SR13akcrkXJM_m7e6A'
+}
+Redis HIT: search:te
+GET /api/v1/users/search?query=te 200 267 - 325.215 ms
+Token from cookies: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc2NTE0OSwiZXhwIjoxNzQ3MzU3MTQ5fQ.-YzLzJKuDAWQNj0zvm0PGJSd6SR13akcrkXJM_m7e6A
+Cookies received: {
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc2NTE0OSwiZXhwIjoxNzQ3MzU3MTQ5fQ.-YzLzJKuDAWQNj0zvm0PGJSd6SR13akcrkXJM_m7e6A'
+}
+Redis HIT: search:te
+GET /api/v1/users/search?query=te 200 267 - 310.610 ms
+Token from cookies: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc2NTE0OSwiZXhwIjoxNzQ3MzU3MTQ5fQ.-YzLzJKuDAWQNj0zvm0PGJSd6SR13akcrkXJM_m7e6A
+Cookies received: {
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc2NTE0OSwiZXhwIjoxNzQ3MzU3MTQ5fQ.-YzLzJKuDAWQNj0zvm0PGJSd6SR13akcrkXJM_m7e6A'
+}
+Redis HIT: all_users
+GET /api/v1/users 200 544 - 466.454 ms
+Token from cookies: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc2NTE0OSwiZXhwIjoxNzQ3MzU3MTQ5fQ.-YzLzJKuDAWQNj0zvm0PGJSd6SR13akcrkXJM_m7e6A
+Cookies received: {
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc2NTE0OSwiZXhwIjoxNzQ3MzU3MTQ5fQ.-YzLzJKuDAWQNj0zvm0PGJSd6SR13akcrkXJM_m7e6A'
+}
+Redis HIT: all_users
+GET /api/v1/users 200 544 - 370.641 ms
+Token from cookies: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc2NTE0OSwiZXhwIjoxNzQ3MzU3MTQ5fQ.-YzLzJKuDAWQNj0zvm0PGJSd6SR13akcrkXJM_m7e6A
+Cookies received: {
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc2NTE0OSwiZXhwIjoxNzQ3MzU3MTQ5fQ.-YzLzJKuDAWQNj0zvm0PGJSd6SR13akcrkXJM_m7e6A'
+}
+Redis HIT: all_users
+GET /api/v1/users 200 544 - 408.513 ms
+Redis HIT: all_products
+GET /api/v1/products 200 22768 - 71.612 ms
+Redis HIT: all_products
+GET /api/v1/products 200 22768 - 450.401 ms
+Redis HIT: all_products
+GET /api/v1/products 200 22768 - 84.852 ms
+Redis HIT: all_products
+GET /api/v1/products 200 22768 - 493.199 ms
+Redis HIT: all_products
+GET /api/v1/products 200 22768 - 76.711 ms
+Token from cookies: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc2NTE0OSwiZXhwIjoxNzQ3MzU3MTQ5fQ.-YzLzJKuDAWQNj0zvm0PGJSd6SR13akcrkXJM_m7e6A
+Cookies received: {
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc2NTE0OSwiZXhwIjoxNzQ3MzU3MTQ5fQ.-YzLzJKuDAWQNj0zvm0PGJSd6SR13akcrkXJM_m7e6A'
+}
+Redis MISS: product:21
+GET /api/v1/products/21 200 612 - 2303.573 ms
+Token from cookies: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc2NTE0OSwiZXhwIjoxNzQ3MzU3MTQ5fQ.-YzLzJKuDAWQNj0zvm0PGJSd6SR13akcrkXJM_m7e6A
+Cookies received: {
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc2NTE0OSwiZXhwIjoxNzQ3MzU3MTQ5fQ.-YzLzJKuDAWQNj0zvm0PGJSd6SR13akcrkXJM_m7e6A'
+}
+Redis HIT: product:21
+GET /api/v1/products/21 200 556 - 354.216 ms
+Redis MISS: search:del
+GET /api/v1/products/search?query=del 200 54 - 346.300 ms
+Redis MISS: search:mac
+GET /api/v1/products/search?query=mac 200 371 - 395.104 ms
+Token from cookies: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc2NTE0OSwiZXhwIjoxNzQ3MzU3MTQ5fQ.-YzLzJKuDAWQNj0zvm0PGJSd6SR13akcrkXJM_m7e6A
+Cookies received: {
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc2NTE0OSwiZXhwIjoxNzQ3MzU3MTQ5fQ.-YzLzJKuDAWQNj0zvm0PGJSd6SR13akcrkXJM_m7e6A'
+}
+Redis MISS: allOrders
+GET /api/v1/orders 200 1027 - 591.839 ms
+Token from cookies: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc2NTE0OSwiZXhwIjoxNzQ3MzU3MTQ5fQ.-YzLzJKuDAWQNj0zvm0PGJSd6SR13akcrkXJM_m7e6A
+Cookies received: {
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc2NTE0OSwiZXhwIjoxNzQ3MzU3MTQ5fQ.-YzLzJKuDAWQNj0zvm0PGJSd6SR13akcrkXJM_m7e6A'
+}
+PATCH /api/v1/orders/1 400 65 - 229.530 ms
+Token from cookies: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc2NTE0OSwiZXhwIjoxNzQ3MzU3MTQ5fQ.-YzLzJKuDAWQNj0zvm0PGJSd6SR13akcrkXJM_m7e6A
+Cookies received: {
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc2NTE0OSwiZXhwIjoxNzQ3MzU3MTQ5fQ.-YzLzJKuDAWQNj0zvm0PGJSd6SR13akcrkXJM_m7e6A'
+}
+Redis MISS: usersOrders:4
+GET /api/v1/orders/user/4 200 1034 - 606.551 ms
+Redis HIT: allCategories
+GET /api/v1/categories 304 - - 99.199 ms
+Redis HIT: all_products
+GET /api/v1/products 304 - - 152.042 ms
+Token from cookies: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc2NTE0OSwiZXhwIjoxNzQ3MzU3MTQ5fQ.-YzLzJKuDAWQNj0zvm0PGJSd6SR13akcrkXJM_m7e6A
+Cookies received: {
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc2NTE0OSwiZXhwIjoxNzQ3MzU3MTQ5fQ.-YzLzJKuDAWQNj0zvm0PGJSd6SR13akcrkXJM_m7e6A'
+}
+Redis MISS: all_ratings
+GET /api/v1/ratings 200 172 - 741.670 ms
+Token from cookies: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc2NTE0OSwiZXhwIjoxNzQ3MzU3MTQ5fQ.-YzLzJKuDAWQNj0zvm0PGJSd6SR13akcrkXJM_m7e6A
+Cookies received: {
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc2NTE0OSwiZXhwIjoxNzQ3MzU3MTQ5fQ.-YzLzJKuDAWQNj0zvm0PGJSd6SR13akcrkXJM_m7e6A'
+}
+Redis HIT: all_ratings
+GET /api/v1/ratings 200 169 - 343.557 ms
+Token from cookies: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc2NTE0OSwiZXhwIjoxNzQ3MzU3MTQ5fQ.-YzLzJKuDAWQNj0zvm0PGJSd6SR13akcrkXJM_m7e6A
+Cookies received: {
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc2NTE0OSwiZXhwIjoxNzQ3MzU3MTQ5fQ.-YzLzJKuDAWQNj0zvm0PGJSd6SR13akcrkXJM_m7e6A'
+}
+Redis HIT: all_ratings
+GET /api/v1/ratings 200 169 - 404.300 ms
+GET /api/v1/ratings/18 200 52 - 568.416 ms
+GET /api/v1/ratings/18 200 59 - 332.198 ms
+Token from cookies: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc2NTE0OSwiZXhwIjoxNzQ3MzU3MTQ5fQ.-YzLzJKuDAWQNj0zvm0PGJSd6SR13akcrkXJM_m7e6A
+Cookies received: {
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc2NTE0OSwiZXhwIjoxNzQ3MzU3MTQ5fQ.-YzLzJKuDAWQNj0zvm0PGJSd6SR13akcrkXJM_m7e6A'
+}
+ Error handler triggered: Unauthorized to access this route
+❗ Error: Unauthorized to access this route
+POST /api/v1/ratings/18 403 47 - 386.941 ms
+Token from cookies: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc2NTE0OSwiZXhwIjoxNzQ3MzU3MTQ5fQ.-YzLzJKuDAWQNj0zvm0PGJSd6SR13akcrkXJM_m7e6A
+Cookies received: {
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc2NTE0OSwiZXhwIjoxNzQ3MzU3MTQ5fQ.-YzLzJKuDAWQNj0zvm0PGJSd6SR13akcrkXJM_m7e6A'
+}
+Redis MISS: weeklySales
+GET /api/v1/orders/stats 200 130 - 668.594 ms
+Token from cookies: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc2NTE0OSwiZXhwIjoxNzQ3MzU3MTQ5fQ.-YzLzJKuDAWQNj0zvm0PGJSd6SR13akcrkXJM_m7e6A
+Cookies received: {
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc2NTE0OSwiZXhwIjoxNzQ3MzU3MTQ5fQ.-YzLzJKuDAWQNj0zvm0PGJSd6SR13akcrkXJM_m7e6A'
+}
+GET /api/v1/orders/35 - - - - ms
+ Error handler triggered: order not found
+❗ Error: order not found
+Redis HIT: all_products
+GET /api/v1/products 200 22768 - 91.035 ms
+Token from cookies: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc2NTE0OSwiZXhwIjoxNzQ3MzU3MTQ5fQ.-YzLzJKuDAWQNj0zvm0PGJSd6SR13akcrkXJM_m7e6A
+Cookies received: {
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc2NTE0OSwiZXhwIjoxNzQ3MzU3MTQ5fQ.-YzLzJKuDAWQNj0zvm0PGJSd6SR13akcrkXJM_m7e6A'
+}
+Redis HIT: product:21
+GET /api/v1/products/21 200 556 - 312.494 ms
+Token from cookies: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc2NTE0OSwiZXhwIjoxNzQ3MzU3MTQ5fQ.-YzLzJKuDAWQNj0zvm0PGJSd6SR13akcrkXJM_m7e6A
+Cookies received: {
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc2NTE0OSwiZXhwIjoxNzQ3MzU3MTQ5fQ.-YzLzJKuDAWQNj0zvm0PGJSd6SR13akcrkXJM_m7e6A'
+}
+Redis HIT: product:21
+GET /api/v1/products/21 200 556 - 306.646 ms
+Token from cookies: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc2NTE0OSwiZXhwIjoxNzQ3MzU3MTQ5fQ.-YzLzJKuDAWQNj0zvm0PGJSd6SR13akcrkXJM_m7e6A
+Cookies received: {
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc2NTE0OSwiZXhwIjoxNzQ3MzU3MTQ5fQ.-YzLzJKuDAWQNj0zvm0PGJSd6SR13akcrkXJM_m7e6A'
+}
+Redis HIT: product:21
+GET /api/v1/products/21 200 556 - 286.855 ms
+Token from cookies: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc2NTE0OSwiZXhwIjoxNzQ3MzU3MTQ5fQ.-YzLzJKuDAWQNj0zvm0PGJSd6SR13akcrkXJM_m7e6A
+Cookies received: {
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc2NTE0OSwiZXhwIjoxNzQ3MzU3MTQ5fQ.-YzLzJKuDAWQNj0zvm0PGJSd6SR13akcrkXJM_m7e6A'
+}
+Redis HIT: product:21
+GET /api/v1/products/21 200 556 - 299.449 ms
+POST /api/v1/auth/login 200 122 - 330.580 ms
+Token from cookies: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc2NTU5MCwiZXhwIjoxNzQ3MzU3NTkwfQ.lce5hRByikZyTY-2Veh44t82i9xpARv3JSZdRS01xN0
+Cookies received: {
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc2NTU5MCwiZXhwIjoxNzQ3MzU3NTkwfQ.lce5hRByikZyTY-2Veh44t82i9xpARv3JSZdRS01xN0'
+}
+Redis HIT: all_users
+GET /api/v1/users 200 544 - 329.049 ms
+Token from cookies: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc2NTU5MCwiZXhwIjoxNzQ3MzU3NTkwfQ.lce5hRByikZyTY-2Veh44t82i9xpARv3JSZdRS01xN0
+Cookies received: {
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc2NTU5MCwiZXhwIjoxNzQ3MzU3NTkwfQ.lce5hRByikZyTY-2Veh44t82i9xpARv3JSZdRS01xN0'
+}
+Redis HIT: all_users
+GET /api/v1/users 200 544 - 268.095 ms
+ Client disconnected: _9ibAcMiTVWUbgo3AAAD
+ Client disconnected: xsngYESMsTS7H3zbAAAC
+ Client disconnected: J_xtCzUO_xmnVJhQAAAF
+ Client disconnected: 4KHGLY4TR897pPnWAAAL
+ New connection: xNcQF7q7cjrLgebmAAAN
+Redis HIT: allCategories
+GET /api/v1/categories 304 - - 84.876 ms
+Redis HIT: all_products
+GET /api/v1/products 304 - - 97.644 ms
+ New connection: BE-JtSMBhu_JDTcWAAAR
+ New connection: YC8SJ7SslEQCcDW2AAAS
+ New connection: o-NogUnzkAKWtIY-AAAT
+ Client disconnected: xNcQF7q7cjrLgebmAAAN
+ Client disconnected: YC8SJ7SslEQCcDW2AAAS
+ Client disconnected: BE-JtSMBhu_JDTcWAAAR
+ Client disconnected: o-NogUnzkAKWtIY-AAAT
+ New connection: a_e00utYEimuhDSKAAAV
+ New connection: pGqJ1s7rIT8u6wlzAAAZ
+ New connection: wQN-p2S5RDMqmDT3AAAa
+ New connection: JNCg6wKrHX_Hyx91AAAb
+Redis Error: Error: read ETIMEDOUT
+    at TLSWrap.onStreamRead (node:internal/stream_base_commons:216:20) {
+  errno: -60,
+  code: 'ETIMEDOUT',
+  syscall: 'read'
+}
+Connected to Upstash Redis!
+Redis MISS: allCategories
+ Error handler triggered: read ETIMEDOUT
+❗ Error: read ETIMEDOUT
+GET /api/v1/categories 500 59 - 2957739.958 ms
+Redis Error: Error: read ETIMEDOUT
+    at TLSWrap.onStreamRead (node:internal/stream_base_commons:216:20) {
+  errno: -60,
+  code: 'ETIMEDOUT',
+  syscall: 'read'
+}
+Connected to Upstash Redis!
+Redis MISS: all_products
+ Error handler triggered: read ETIMEDOUT
+❗ Error: read ETIMEDOUT
+GET /api/v1/products 500 59 - 1867795.388 ms
+Redis MISS: allCategories
+Redis MISS: all_products
+GET /api/v1/categories 200 160 - 1956.986 ms
+GET /api/v1/products 200 22798 - 2128.066 ms
+ Client disconnected: pGqJ1s7rIT8u6wlzAAAZ
+ Client disconnected: wQN-p2S5RDMqmDT3AAAa
+ Client disconnected: JNCg6wKrHX_Hyx91AAAb
+ Client disconnected: a_e00utYEimuhDSKAAAV
+ New connection: ZCkeiXv91zjvfxYBAAAd
+Redis HIT: allCategories
+GET /api/v1/categories 200 165 - 74.712 ms
+ New connection: en183Us5RJAOIkHwAAAf
+Redis HIT: all_products
+GET /api/v1/products 200 22768 - 119.110 ms
+ New connection: zfZQR2Ytx-eUbUYTAAAi
+ New connection: uKyv2tOcNYajVg16AAAj
+ Client disconnected: en183Us5RJAOIkHwAAAf
+ Client disconnected: ZCkeiXv91zjvfxYBAAAd
+ Client disconnected: zfZQR2Ytx-eUbUYTAAAi
+ Client disconnected: uKyv2tOcNYajVg16AAAj
+ New connection: txI-3G1SbR-x1iqRAAAl
+ New connection: V8_3OmH2ci2VjF3rAAAo
+ New connection: iDnVDLDX85Ma7SPfAAAq
+ New connection: SiBFaHSqjJEjxCevAAAr
+GET /api/v1/categories - - - - ms
+ Client disconnected: txI-3G1SbR-x1iqRAAAl
+ New connection: 1VQ3gh_X1Da8XhFJAAAt
+GET /api/v1/categories - - - - ms
+ Client disconnected: 1VQ3gh_X1Da8XhFJAAAt
+ New connection: QPD2iOzpKON_BAmkAAAv
+GET /api/v1/categories - - - - ms
+ Client disconnected: QPD2iOzpKON_BAmkAAAv
+ New connection: 9sPBZ-UZKK_jhdRBAAAx
+GET /api/v1/categories - - - - ms
+ Client disconnected: 9sPBZ-UZKK_jhdRBAAAx
+ New connection: C32CmNYVOF6SgFqKAAAz
+GET /api/v1/products - - - - ms
+ Client disconnected: V8_3OmH2ci2VjF3rAAAo
+ New connection: iz-3TeKD6I-vto4qAAA1
+GET /api/v1/categories - - - - ms
+ Client disconnected: C32CmNYVOF6SgFqKAAAz
+ New connection: hbb0_pXQg44ZO-s0AAA3
+Redis Error: Error: read ETIMEDOUT
+    at TLSWrap.onStreamRead (node:internal/stream_base_commons:216:20) {
+  errno: -60,
+  code: 'ETIMEDOUT',
+  syscall: 'read'
+}
+Connected to Upstash Redis!
+Redis MISS: allCategories
+Redis MISS: allCategories
+Redis MISS: allCategories
+Redis MISS: allCategories
+Redis MISS: allCategories
+Redis MISS: all_products
+Redis MISS: allCategories
+GET /api/v1/categories 200 160 - 14638.732 ms
+Redis HIT: allCategories
+GET /api/v1/categories 200 165 - 34.025 ms
+Redis MISS: all_products
+GET /api/v1/products 200 22798 - 533.071 ms
+Redis HIT: all_products
+GET /api/v1/products 200 22768 - 139.026 ms
+OPTIONS /api/v1/auth/login 204 0 - 2.286 ms
+POST /api/v1/auth/login 200 122 - 398.873 ms
+Cookies received: {
+  __stripe_mid: '88a82260-b279-4898-bc81-1dd91232ab59336345',
+  __stripe_sid: 'c366912f-7733-4f68-b947-275cf39b30dce7c636'
+}
+ Error handler triggered: no token provided
+❗ Error: no token provided
+GET /api/v1/users/profile 401 31 - 0.364 ms
+Redis HIT: allCategories
+GET /api/v1/categories 304 - - 65.585 ms
+Redis HIT: all_products
+GET /api/v1/products 304 - - 76.270 ms
+ Error handler triggered: read ETIMEDOUT
+❗ Error: read ETIMEDOUT
+ Error handler triggered: read ETIMEDOUT
+❗ Error: read ETIMEDOUT
+OPTIONS /api/v1/auth/login 204 0 - 0.493 ms
+POST /api/v1/auth/login 200 117 - 318.474 ms
+Cookies received: {
+  __stripe_mid: '88a82260-b279-4898-bc81-1dd91232ab59336345',
+  __stripe_sid: 'c366912f-7733-4f68-b947-275cf39b30dce7c636'
+}
+ Error handler triggered: no token provided
+❗ Error: no token provided
+GET /api/v1/users/profile 401 31 - 0.385 ms
+Redis HIT: allCategories
+GET /api/v1/categories 304 - - 66.066 ms
+Redis HIT: all_products
+GET /api/v1/products 304 - - 89.502 ms
+[33m[nodemon] 3.0.2[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,cjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+Server is running on port 5050
+Connected to Upstash Redis!
+ New connection: hrvdLlZ49I5WsTImAAAB
+ Admin joined: hrvdLlZ49I5WsTImAAAB
+ Admin joined: hrvdLlZ49I5WsTImAAAB
+ Connected to MySQL Database!
+ New connection: txstwRvKrEhIio7oAAAD
+ New connection: LVaD58gt4tj1FlB0AAAF
+ New connection: RTCBm-S0z3R0bXHyAAAH
+Redis MISS: categoryProducts1
+GET /api/v1/categories/1/products 200 5279 - 379.549 ms
+Redis MISS: categoryProducts2
+GET /api/v1/categories/2/products 304 - - 381.230 ms
+Redis MISS: categoryProducts3
+GET /api/v1/categories/3/products 200 2535 - 402.917 ms
+Redis MISS: categoryProducts4
+GET /api/v1/categories/4/products 200 2801 - 392.602 ms
+Redis MISS: category:1
+GET /api/v1/categories/1 200 37 - 462.710 ms
+OPTIONS /api/v1/categories/1 204 0 - 0.143 ms
+Token from cookies: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc5MDUzMywiZXhwIjoxNzQ3MzgyNTMzfQ.3QLmGJNG31cU8r6I1m4GM8KlHK8ML-6H61d5Mm3fQgk
+Cookies received: {
+  __stripe_mid: '88a82260-b279-4898-bc81-1dd91232ab59336345',
+  __stripe_sid: 'c366912f-7733-4f68-b947-275cf39b30dce7c636',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc5MDUzMywiZXhwIjoxNzQ3MzgyNTMzfQ.3QLmGJNG31cU8r6I1m4GM8KlHK8ML-6H61d5Mm3fQgk'
+}
+PATCH /api/v1/categories/1 200 45 - 1197.894 ms
+Redis MISS: category:1
+Redis HIT: categoryProducts4
+Redis MISS: allCategories
+GET /api/v1/categories/4/products 200 2808 - 46.323 ms
+Redis HIT: all_products
+Redis HIT: categoryProducts2
+Redis HIT: categoryProducts1
+GET /api/v1/products 304 - - 88.884 ms
+GET /api/v1/categories/2/products 200 2034 - 88.852 ms
+GET /api/v1/categories/1/products 200 5286 - 88.905 ms
+Redis HIT: categoryProducts3
+GET /api/v1/categories/3/products 200 2542 - 41.263 ms
+Token from cookies: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc5MDUzMywiZXhwIjoxNzQ3MzgyNTMzfQ.3QLmGJNG31cU8r6I1m4GM8KlHK8ML-6H61d5Mm3fQgk
+Cookies received: {
+  __stripe_mid: '88a82260-b279-4898-bc81-1dd91232ab59336345',
+  __stripe_sid: 'c366912f-7733-4f68-b947-275cf39b30dce7c636',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc5MDUzMywiZXhwIjoxNzQ3MzgyNTMzfQ.3QLmGJNG31cU8r6I1m4GM8KlHK8ML-6H61d5Mm3fQgk'
+}
+Redis HIT: categoryProducts4
+GET /api/v1/categories/4/products 304 - - 40.114 ms
+Redis HIT: all_products
+GET /api/v1/products 304 - - 43.664 ms
+GET /api/v1/categories/1 200 37 - 320.152 ms
+Redis HIT: category:1
+GET /api/v1/categories/1 200 88 - 32.822 ms
+GET /api/v1/categories 200 160 - 1321.710 ms
+Redis HIT: allCategories
+GET /api/v1/categories 200 165 - 87.507 ms
+GET /api/v1/users/profile 304 - - 1490.679 ms
+Redis MISS: category:4
+GET /api/v1/categories/4 200 39 - 333.070 ms
+OPTIONS /api/v1/categories/4 204 0 - 0.068 ms
+Token from cookies: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc5MDUzMywiZXhwIjoxNzQ3MzgyNTMzfQ.3QLmGJNG31cU8r6I1m4GM8KlHK8ML-6H61d5Mm3fQgk
+Cookies received: {
+  __stripe_mid: '88a82260-b279-4898-bc81-1dd91232ab59336345',
+  __stripe_sid: 'c366912f-7733-4f68-b947-275cf39b30dce7c636',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc5MDUzMywiZXhwIjoxNzQ3MzgyNTMzfQ.3QLmGJNG31cU8r6I1m4GM8KlHK8ML-6H61d5Mm3fQgk'
+}
+PATCH /api/v1/categories/4 200 45 - 1086.998 ms
+Token from cookies: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc5MDUzMywiZXhwIjoxNzQ3MzgyNTMzfQ.3QLmGJNG31cU8r6I1m4GM8KlHK8ML-6H61d5Mm3fQgk
+Cookies received: {
+  __stripe_mid: '88a82260-b279-4898-bc81-1dd91232ab59336345',
+  __stripe_sid: 'c366912f-7733-4f68-b947-275cf39b30dce7c636',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc5MDUzMywiZXhwIjoxNzQ3MzgyNTMzfQ.3QLmGJNG31cU8r6I1m4GM8KlHK8ML-6H61d5Mm3fQgk'
+}
+Redis MISS: category:4
+Redis HIT: all_products
+GET /api/v1/products 304 - - 58.099 ms
+Redis MISS: allCategories
+Redis HIT: categoryProducts4
+Redis HIT: categoryProducts3
+GET /api/v1/categories/4/products 304 - - 67.219 ms
+GET /api/v1/categories/3/products 304 - - 67.024 ms
+Redis HIT: categoryProducts2
+Redis HIT: category:1
+Redis HIT: categoryProducts1
+GET /api/v1/categories/2/products 304 - - 66.662 ms
+GET /api/v1/categories/1 304 - - 56.877 ms
+GET /api/v1/categories/1/products 304 - - 56.517 ms
+Redis HIT: all_products
+Redis HIT: categoryProducts4
+GET /api/v1/products 304 - - 135.041 ms
+GET /api/v1/categories/4/products 304 - - 134.897 ms
+GET /api/v1/categories/4 200 39 - 375.212 ms
+GET /api/v1/categories 200 160 - 402.318 ms
+Redis HIT: category:4
+Redis HIT: allCategories
+GET /api/v1/categories/4 200 90 - 65.113 ms
+GET /api/v1/categories 200 165 - 36.415 ms
+GET /api/v1/users/profile 304 - - 540.479 ms
+Token from cookies: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc5MDUzMywiZXhwIjoxNzQ3MzgyNTMzfQ.3QLmGJNG31cU8r6I1m4GM8KlHK8ML-6H61d5Mm3fQgk
+Cookies received: {
+  __stripe_mid: '88a82260-b279-4898-bc81-1dd91232ab59336345',
+  __stripe_sid: 'c366912f-7733-4f68-b947-275cf39b30dce7c636',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc5MDUzMywiZXhwIjoxNzQ3MzgyNTMzfQ.3QLmGJNG31cU8r6I1m4GM8KlHK8ML-6H61d5Mm3fQgk'
+}
+Redis MISS: all_users
+GET /api/v1/users 200 525 - 579.903 ms
+Token from cookies: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc5MDUzMywiZXhwIjoxNzQ3MzgyNTMzfQ.3QLmGJNG31cU8r6I1m4GM8KlHK8ML-6H61d5Mm3fQgk
+Cookies received: {
+  __stripe_mid: '88a82260-b279-4898-bc81-1dd91232ab59336345',
+  __stripe_sid: 'c366912f-7733-4f68-b947-275cf39b30dce7c636',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc5MDUzMywiZXhwIjoxNzQ3MzgyNTMzfQ.3QLmGJNG31cU8r6I1m4GM8KlHK8ML-6H61d5Mm3fQgk'
+}
+Redis HIT: users:1
+GET /api/v1/users/1 200 219 - 580.472 ms
+Token from cookies: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc5MDUzMywiZXhwIjoxNzQ3MzgyNTMzfQ.3QLmGJNG31cU8r6I1m4GM8KlHK8ML-6H61d5Mm3fQgk
+Cookies received: {
+  __stripe_mid: '88a82260-b279-4898-bc81-1dd91232ab59336345',
+  __stripe_sid: 'c366912f-7733-4f68-b947-275cf39b30dce7c636',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc5MDUzMywiZXhwIjoxNzQ3MzgyNTMzfQ.3QLmGJNG31cU8r6I1m4GM8KlHK8ML-6H61d5Mm3fQgk'
+}
+Redis MISS: usersOrders:1
+GET /api/v1/orders/user/1 200 53 - 580.182 ms
+OPTIONS /api/v1/users/1 204 0 - 0.173 ms
+Token from cookies: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc5MDUzMywiZXhwIjoxNzQ3MzgyNTMzfQ.3QLmGJNG31cU8r6I1m4GM8KlHK8ML-6H61d5Mm3fQgk
+Cookies received: {
+  __stripe_mid: '88a82260-b279-4898-bc81-1dd91232ab59336345',
+  __stripe_sid: 'c366912f-7733-4f68-b947-275cf39b30dce7c636',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc5MDUzMywiZXhwIjoxNzQ3MzgyNTMzfQ.3QLmGJNG31cU8r6I1m4GM8KlHK8ML-6H61d5Mm3fQgk'
+}
+PATCH /api/v1/users/1 200 45 - 836.962 ms
+Token from cookies: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc5MDUzMywiZXhwIjoxNzQ3MzgyNTMzfQ.3QLmGJNG31cU8r6I1m4GM8KlHK8ML-6H61d5Mm3fQgk
+Cookies received: {
+  __stripe_mid: '88a82260-b279-4898-bc81-1dd91232ab59336345',
+  __stripe_sid: 'c366912f-7733-4f68-b947-275cf39b30dce7c636',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc5MDUzMywiZXhwIjoxNzQ3MzgyNTMzfQ.3QLmGJNG31cU8r6I1m4GM8KlHK8ML-6H61d5Mm3fQgk'
+}
+Token from cookies: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc5MDUzMywiZXhwIjoxNzQ3MzgyNTMzfQ.3QLmGJNG31cU8r6I1m4GM8KlHK8ML-6H61d5Mm3fQgk
+Cookies received: {
+  __stripe_mid: '88a82260-b279-4898-bc81-1dd91232ab59336345',
+  __stripe_sid: 'c366912f-7733-4f68-b947-275cf39b30dce7c636',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc5MDUzMywiZXhwIjoxNzQ3MzgyNTMzfQ.3QLmGJNG31cU8r6I1m4GM8KlHK8ML-6H61d5Mm3fQgk'
+}
+Redis HIT: allCategories
+GET /api/v1/categories 304 - - 65.321 ms
+Redis HIT: all_products
+Redis HIT: categoryProducts4
+GET /api/v1/products 304 - - 80.243 ms
+GET /api/v1/categories/4/products 304 - - 80.057 ms
+Redis HIT: categoryProducts1
+GET /api/v1/categories/1/products 304 - - 79.430 ms
+Token from cookies: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc5MDUzMywiZXhwIjoxNzQ3MzgyNTMzfQ.3QLmGJNG31cU8r6I1m4GM8KlHK8ML-6H61d5Mm3fQgk
+Cookies received: {
+  __stripe_mid: '88a82260-b279-4898-bc81-1dd91232ab59336345',
+  __stripe_sid: 'c366912f-7733-4f68-b947-275cf39b30dce7c636',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc5MDUzMywiZXhwIjoxNzQ3MzgyNTMzfQ.3QLmGJNG31cU8r6I1m4GM8KlHK8ML-6H61d5Mm3fQgk'
+}
+Redis HIT: categoryProducts2
+Redis HIT: categoryProducts3
+GET /api/v1/categories/2/products 304 - - 66.750 ms
+GET /api/v1/categories/3/products 304 - - 48.053 ms
+Redis HIT: category:1
+GET /api/v1/categories/1 304 - - 48.111 ms
+Token from cookies: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc5MDUzMywiZXhwIjoxNzQ3MzgyNTMzfQ.3QLmGJNG31cU8r6I1m4GM8KlHK8ML-6H61d5Mm3fQgk
+Cookies received: {
+  __stripe_mid: '88a82260-b279-4898-bc81-1dd91232ab59336345',
+  __stripe_sid: 'c366912f-7733-4f68-b947-275cf39b30dce7c636',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc5MDUzMywiZXhwIjoxNzQ3MzgyNTMzfQ.3QLmGJNG31cU8r6I1m4GM8KlHK8ML-6H61d5Mm3fQgk'
+}
+Redis HIT: category:4
+GET /api/v1/categories/4 304 - - 55.690 ms
+Redis HIT: allCategories
+GET /api/v1/categories 304 - - 54.346 ms
+Redis HIT: all_products
+GET /api/v1/products 304 - - 61.420 ms
+Redis HIT: categoryProducts4
+GET /api/v1/categories/4/products 304 - - 61.232 ms
+Redis HIT: allCategories
+GET /api/v1/categories 304 - - 72.237 ms
+Redis HIT: all_products
+GET /api/v1/products 304 - - 73.302 ms
+Redis HIT: users:1
+Redis HIT: categoryProducts4
+GET /api/v1/categories/4/products 304 - - 53.681 ms
+Redis MISS: all_users
+Redis HIT: allCategories
+GET /api/v1/categories 304 - - 65.753 ms
+Redis HIT: all_products
+Redis HIT: categoryProducts4
+GET /api/v1/products 304 - - 68.122 ms
+GET /api/v1/categories/4/products 304 - - 54.504 ms
+GET /api/v1/users/profile 304 - - 545.725 ms
+GET /api/v1/users/1 200 219 - 665.100 ms
+GET /api/v1/users 304 - - 625.756 ms
+Redis HIT: usersOrders:1
+GET /api/v1/orders/user/1 200 72 - 1579.795 ms
+Token from cookies: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc5MDUzMywiZXhwIjoxNzQ3MzgyNTMzfQ.3QLmGJNG31cU8r6I1m4GM8KlHK8ML-6H61d5Mm3fQgk
+Cookies received: {
+  __stripe_mid: '88a82260-b279-4898-bc81-1dd91232ab59336345',
+  __stripe_sid: 'c366912f-7733-4f68-b947-275cf39b30dce7c636',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc5MDUzMywiZXhwIjoxNzQ3MzgyNTMzfQ.3QLmGJNG31cU8r6I1m4GM8KlHK8ML-6H61d5Mm3fQgk'
+}
+Redis HIT: usersOrders:1
+GET /api/v1/orders/user/1 304 - - 328.271 ms
+Token from cookies: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc5MDUzMywiZXhwIjoxNzQ3MzgyNTMzfQ.3QLmGJNG31cU8r6I1m4GM8KlHK8ML-6H61d5Mm3fQgk
+Cookies received: {
+  __stripe_mid: '88a82260-b279-4898-bc81-1dd91232ab59336345',
+  __stripe_sid: 'c366912f-7733-4f68-b947-275cf39b30dce7c636',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc5MDUzMywiZXhwIjoxNzQ3MzgyNTMzfQ.3QLmGJNG31cU8r6I1m4GM8KlHK8ML-6H61d5Mm3fQgk'
+}
+Redis MISS: allOrders
+GET /api/v1/orders 200 1027 - 620.329 ms
+Token from cookies: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc5MDUzMywiZXhwIjoxNzQ3MzgyNTMzfQ.3QLmGJNG31cU8r6I1m4GM8KlHK8ML-6H61d5Mm3fQgk
+Cookies received: {
+  __stripe_mid: '88a82260-b279-4898-bc81-1dd91232ab59336345',
+  __stripe_sid: 'c366912f-7733-4f68-b947-275cf39b30dce7c636',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc5MDUzMywiZXhwIjoxNzQ3MzgyNTMzfQ.3QLmGJNG31cU8r6I1m4GM8KlHK8ML-6H61d5Mm3fQgk'
+}
+Redis MISS: all_ratings
+GET /api/v1/ratings 200 172 - 592.077 ms
+Token from cookies: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc5MDUzMywiZXhwIjoxNzQ3MzgyNTMzfQ.3QLmGJNG31cU8r6I1m4GM8KlHK8ML-6H61d5Mm3fQgk
+Cookies received: {
+  __stripe_mid: '88a82260-b279-4898-bc81-1dd91232ab59336345',
+  __stripe_sid: 'c366912f-7733-4f68-b947-275cf39b30dce7c636',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc5MDUzMywiZXhwIjoxNzQ3MzgyNTMzfQ.3QLmGJNG31cU8r6I1m4GM8KlHK8ML-6H61d5Mm3fQgk'
+}
+Token from cookies: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc5MDUzMywiZXhwIjoxNzQ3MzgyNTMzfQ.3QLmGJNG31cU8r6I1m4GM8KlHK8ML-6H61d5Mm3fQgk
+Cookies received: {
+  __stripe_mid: '88a82260-b279-4898-bc81-1dd91232ab59336345',
+  __stripe_sid: 'c366912f-7733-4f68-b947-275cf39b30dce7c636',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc5MDUzMywiZXhwIjoxNzQ3MzgyNTMzfQ.3QLmGJNG31cU8r6I1m4GM8KlHK8ML-6H61d5Mm3fQgk'
+}
+Redis MISS: weeklyUsers
+Redis MISS: weeklySales
+GET /api/v1/users/stats 200 162 - 658.001 ms
+GET /api/v1/orders/stats 200 130 - 680.274 ms
+Token from cookies: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc5MDUzMywiZXhwIjoxNzQ3MzgyNTMzfQ.3QLmGJNG31cU8r6I1m4GM8KlHK8ML-6H61d5Mm3fQgk
+Cookies received: {
+  __stripe_mid: '88a82260-b279-4898-bc81-1dd91232ab59336345',
+  __stripe_sid: 'c366912f-7733-4f68-b947-275cf39b30dce7c636',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc5MDUzMywiZXhwIjoxNzQ3MzgyNTMzfQ.3QLmGJNG31cU8r6I1m4GM8KlHK8ML-6H61d5Mm3fQgk'
+}
+GET /api/v1/orders/9 304 - - 1077.748 ms
+OPTIONS /api/v1/orders/9 204 0 - 0.205 ms
+Token from cookies: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc5MDUzMywiZXhwIjoxNzQ3MzgyNTMzfQ.3QLmGJNG31cU8r6I1m4GM8KlHK8ML-6H61d5Mm3fQgk
+Cookies received: {
+  __stripe_mid: '88a82260-b279-4898-bc81-1dd91232ab59336345',
+  __stripe_sid: 'c366912f-7733-4f68-b947-275cf39b30dce7c636',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc5MDUzMywiZXhwIjoxNzQ3MzgyNTMzfQ.3QLmGJNG31cU8r6I1m4GM8KlHK8ML-6H61d5Mm3fQgk'
+}
+PATCH /api/v1/orders/9 200 71 - 934.348 ms
+Token from cookies: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc5MDUzMywiZXhwIjoxNzQ3MzgyNTMzfQ.3QLmGJNG31cU8r6I1m4GM8KlHK8ML-6H61d5Mm3fQgk
+Cookies received: {
+  __stripe_mid: '88a82260-b279-4898-bc81-1dd91232ab59336345',
+  __stripe_sid: 'c366912f-7733-4f68-b947-275cf39b30dce7c636',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc5MDUzMywiZXhwIjoxNzQ3MzgyNTMzfQ.3QLmGJNG31cU8r6I1m4GM8KlHK8ML-6H61d5Mm3fQgk'
+}
+Token from cookies: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc5MDUzMywiZXhwIjoxNzQ3MzgyNTMzfQ.3QLmGJNG31cU8r6I1m4GM8KlHK8ML-6H61d5Mm3fQgk
+Cookies received: {
+  __stripe_mid: '88a82260-b279-4898-bc81-1dd91232ab59336345',
+  __stripe_sid: 'c366912f-7733-4f68-b947-275cf39b30dce7c636',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc5MDUzMywiZXhwIjoxNzQ3MzgyNTMzfQ.3QLmGJNG31cU8r6I1m4GM8KlHK8ML-6H61d5Mm3fQgk'
+}
+Redis HIT: allCategories
+GET /api/v1/categories 304 - - 29.327 ms
+Redis HIT: all_products
+GET /api/v1/products 304 - - 275.581 ms
+Redis HIT: categoryProducts4
+Redis HIT: categoryProducts3
+GET /api/v1/categories/4/products 304 - - 271.998 ms
+GET /api/v1/categories/3/products 304 - - 271.099 ms
+Redis HIT: categoryProducts1
+GET /api/v1/categories/1/products 304 - - 251.053 ms
+Token from cookies: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc5MDUzMywiZXhwIjoxNzQ3MzgyNTMzfQ.3QLmGJNG31cU8r6I1m4GM8KlHK8ML-6H61d5Mm3fQgk
+Cookies received: {
+  __stripe_mid: '88a82260-b279-4898-bc81-1dd91232ab59336345',
+  __stripe_sid: 'c366912f-7733-4f68-b947-275cf39b30dce7c636',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc5MDUzMywiZXhwIjoxNzQ3MzgyNTMzfQ.3QLmGJNG31cU8r6I1m4GM8KlHK8ML-6H61d5Mm3fQgk'
+}
+Redis HIT: categoryProducts2
+GET /api/v1/categories/2/products 304 - - 55.980 ms
+Redis HIT: category:1
+GET /api/v1/categories/1 304 - - 55.996 ms
+Redis HIT: category:4
+GET /api/v1/categories/4 304 - - 54.994 ms
+Token from cookies: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc5MDUzMywiZXhwIjoxNzQ3MzgyNTMzfQ.3QLmGJNG31cU8r6I1m4GM8KlHK8ML-6H61d5Mm3fQgk
+Cookies received: {
+  __stripe_mid: '88a82260-b279-4898-bc81-1dd91232ab59336345',
+  __stripe_sid: 'c366912f-7733-4f68-b947-275cf39b30dce7c636',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc5MDUzMywiZXhwIjoxNzQ3MzgyNTMzfQ.3QLmGJNG31cU8r6I1m4GM8KlHK8ML-6H61d5Mm3fQgk'
+}
+Token from cookies: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc5MDUzMywiZXhwIjoxNzQ3MzgyNTMzfQ.3QLmGJNG31cU8r6I1m4GM8KlHK8ML-6H61d5Mm3fQgk
+Cookies received: {
+  __stripe_mid: '88a82260-b279-4898-bc81-1dd91232ab59336345',
+  __stripe_sid: 'c366912f-7733-4f68-b947-275cf39b30dce7c636',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc5MDUzMywiZXhwIjoxNzQ3MzgyNTMzfQ.3QLmGJNG31cU8r6I1m4GM8KlHK8ML-6H61d5Mm3fQgk'
+}
+Token from cookies: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc5MDUzMywiZXhwIjoxNzQ3MzgyNTMzfQ.3QLmGJNG31cU8r6I1m4GM8KlHK8ML-6H61d5Mm3fQgk
+Cookies received: {
+  __stripe_mid: '88a82260-b279-4898-bc81-1dd91232ab59336345',
+  __stripe_sid: 'c366912f-7733-4f68-b947-275cf39b30dce7c636',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc5MDUzMywiZXhwIjoxNzQ3MzgyNTMzfQ.3QLmGJNG31cU8r6I1m4GM8KlHK8ML-6H61d5Mm3fQgk'
+}
+GET /api/v1/users/profile 304 - - 499.627 ms
+Token from cookies: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc5MDUzMywiZXhwIjoxNzQ3MzgyNTMzfQ.3QLmGJNG31cU8r6I1m4GM8KlHK8ML-6H61d5Mm3fQgk
+Cookies received: {
+  __stripe_mid: '88a82260-b279-4898-bc81-1dd91232ab59336345',
+  __stripe_sid: 'c366912f-7733-4f68-b947-275cf39b30dce7c636',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc5MDUzMywiZXhwIjoxNzQ3MzgyNTMzfQ.3QLmGJNG31cU8r6I1m4GM8KlHK8ML-6H61d5Mm3fQgk'
+}
+Redis HIT: all_users
+GET /api/v1/users 200 544 - 273.938 ms
+Token from cookies: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc5MDUzMywiZXhwIjoxNzQ3MzgyNTMzfQ.3QLmGJNG31cU8r6I1m4GM8KlHK8ML-6H61d5Mm3fQgk
+Cookies received: {
+  __stripe_mid: '88a82260-b279-4898-bc81-1dd91232ab59336345',
+  __stripe_sid: 'c366912f-7733-4f68-b947-275cf39b30dce7c636',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc5MDUzMywiZXhwIjoxNzQ3MzgyNTMzfQ.3QLmGJNG31cU8r6I1m4GM8KlHK8ML-6H61d5Mm3fQgk'
+}
+Redis HIT: users:1
+GET /api/v1/users/1 200 195 - 297.951 ms
+Token from cookies: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc5MDUzMywiZXhwIjoxNzQ3MzgyNTMzfQ.3QLmGJNG31cU8r6I1m4GM8KlHK8ML-6H61d5Mm3fQgk
+Cookies received: {
+  __stripe_mid: '88a82260-b279-4898-bc81-1dd91232ab59336345',
+  __stripe_sid: 'c366912f-7733-4f68-b947-275cf39b30dce7c636',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJTYW11ZWxvd29leWUyNDA2QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NDc5MDUzMywiZXhwIjoxNzQ3MzgyNTMzfQ.3QLmGJNG31cU8r6I1m4GM8KlHK8ML-6H61d5Mm3fQgk'
+}
+Redis HIT: weeklyUsers
+Redis MISS: weeklyUsers
+GET /api/v1/users/stats 200 174 - 291.175 ms
+Redis HIT: all_ratings
+Redis HIT: allCategories
+GET /api/v1/ratings 200 169 - 300.684 ms
+GET /api/v1/categories 304 - - 57.367 ms
+Redis HIT: all_products
+Redis HIT: categoryProducts4
+GET /api/v1/products 304 - - 69.407 ms
+GET /api/v1/categories/4/products 304 - - 69.038 ms
+Redis HIT: weeklySales
+GET /api/v1/orders/stats 200 143 - 364.497 ms
+Redis HIT: allCategories
+GET /api/v1/categories 304 - - 72.783 ms
+Redis HIT: all_products
+GET /api/v1/products 304 - - 75.843 ms
+Redis HIT: categoryProducts4
+Redis HIT: allCategories
+GET /api/v1/categories/4/products 304 - - 44.992 ms
+GET /api/v1/categories 304 - - 42.215 ms
+Redis HIT: all_products
+GET /api/v1/products 304 - - 54.092 ms
+ Error handler triggered: Cannot set headers after they are sent to the client
+❗ Error: Cannot set headers after they are sent to the client
+GET /api/v1/categories - - - - ms
+Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (node:_http_outgoing:699:11)
+    at ServerResponse.header (/Users/user/Desktop/my-ecommerce Peoject/node_modules/express/lib/response.js:794:10)
+    at ServerResponse.send (/Users/user/Desktop/my-ecommerce Peoject/node_modules/express/lib/response.js:174:12)
+    at ServerResponse.json (/Users/user/Desktop/my-ecommerce Peoject/node_modules/express/lib/response.js:278:15)
+    at errorHandlerMiddleware (file:///Users/user/Desktop/my-ecommerce%20Peoject/middlewares/errorHandlerMiddleware.js:14:21)
+    at newFn (/Users/user/Desktop/my-ecommerce Peoject/node_modules/express-async-errors/index.js:16:20)
+    at Layer.handle_error (/Users/user/Desktop/my-ecommerce Peoject/node_modules/express/lib/router/layer.js:71:5)
+    at trim_prefix (/Users/user/Desktop/my-ecommerce Peoject/node_modules/express/lib/router/index.js:326:13)
+    at /Users/user/Desktop/my-ecommerce Peoject/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/user/Desktop/my-ecommerce Peoject/node_modules/express/lib/router/index.js:346:12)
+Redis HIT: categoryProducts4
+GET /api/v1/categories/4/products 304 - - 66.168 ms
+Redis HIT: allCategories
+Redis HIT: all_products
+Redis HIT: allCategories
+GET /api/v1/products 304 - - 57.297 ms
+GET /api/v1/categories 304 - - 38.942 ms
+Redis HIT: categoryProducts4
+GET /api/v1/categories/4/products 304 - - 92.739 ms
+GET /api/v1/orders/9 200 993 - 1201.954 ms
+Redis HIT: usersOrders:1
+GET /api/v1/orders/user/1 304 - - 1535.664 ms
+Redis MISS: allOrders
+GET /api/v1/orders 200 1027 - 1892.212 ms

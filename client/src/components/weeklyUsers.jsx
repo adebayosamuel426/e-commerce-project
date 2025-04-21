@@ -11,6 +11,9 @@ import {
 } from "chart.js";
 
 ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement);
+import dayjs from "dayjs";
+import customParseFormat from "dayjs/plugin/customParseFormat";
+dayjs.extend(customParseFormat);
 
 const fetchWeeklyUsers = async () => {
   const { data } = await customFetch.get("/users/stats");
@@ -24,8 +27,12 @@ const WeeklyUsers = () => {
 
   if (isLoading) return <p></p>;
 
-  const labels = data.map((item) => new Date(item.date).toLocaleDateString());
   const userData = data.map((item) => parseInt(item.total_users));
+  // using custom format "DD/MM/YYYY" to parse date
+  const labels = data.map((item) => {
+    const parsed = dayjs(item.date, "DD/MM/YYYY");
+    return parsed.isValid() ? parsed.format("ddd, MMM D") : "Invalid Date";
+  });
 
   const chartData = {
     labels,

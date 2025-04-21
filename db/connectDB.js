@@ -13,6 +13,7 @@ const pool = mysql.createPool({
     port: parseInt(DB.port),
     waitForConnections: true,
     connectionLimit: 10,
+    queueLimit: 0
 });
 
 // Test connection

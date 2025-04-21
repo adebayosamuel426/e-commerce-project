@@ -18,12 +18,14 @@ import cors from "cors";
 import { createServer } from 'http';
 import { Server } from 'socket.io';
 import helmet from 'helmet';
+import morgan from 'morgan';
 
 // Use Helmet to secure HTTP headers
 app.use(helmet());
 app.use(express.json());
-app.use(express.urlencoded({ extended: true })); // ✅ Parses form data
+app.use(express.urlencoded({ extended: true })); // Parses form data
 app.use(cookieParser());
+app.use(morgan(':method :url :status :res[content-length] - :response-time ms'));
 app.use(cors({
     origin: process.env.CLIENT_URL,
     credentials: true,

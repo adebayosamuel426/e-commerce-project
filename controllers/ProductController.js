@@ -140,12 +140,18 @@ const getAllProducts = async(req, res) => {
 
     if (cachedProducts) {
         // If cached data exists, return it as JSON
+        console.log("Redis HIT:", cacheKey);
         return res.status(StatusCodes.OK).json({ products: JSON.parse(cachedProducts), message: "Fetched from cache" });
+    } else {
+        console.log("Redis MISS:", cacheKey);
     }
+
     // If not cached, fetch products from the database 
     const [products] = await pool.query('SELECT * FROM products');
     // Cache the products for future use (set expiration to 1 hour)
-    await redis.setex(cacheKey, process.env.REDIS_EXP_TIME, JSON.stringify(products));
+
+    const REDIS_EXP = parseInt(process.env.REDIS_EXP_TIME) || 3600;
+    await redis.setex(cacheKey, REDIS_EXP, JSON.stringify(products));
 
 
     res.status(StatusCodes.OK).json({ products: products, message: "these are all the products fetched from database" });
@@ -159,8 +165,11 @@ const getProductById = async(req, res) => {
     const cachedProduct = await redis.get(cacheKey);
 
     if (cachedProduct) {
+        console.log("Redis HIT:", cacheKey);
         // If cached data exists, return it as JSON
         return res.status(StatusCodes.OK).json({ product: JSON.parse(cachedProduct), message: `Fetched product with ID: ${id} from cache` });
+    } else {
+        console.log("Redis MISS:", cacheKey);
     }
 
 
@@ -187,13 +196,17 @@ const searchProducts = async(req, res) => {
     const cachedResults = await redis.get(cacheKey);
 
     if (cachedResults) {
+        console.log("Redis HIT:", cacheKey);
         // If cached data exists, return it as JSON
         return res.status(StatusCodes.OK).json({ products: JSON.parse(cachedResults), message: "Fetched search results from cache" });
+    } else {
+        console.log("Redis MISS:", cacheKey);
     }
 
     const [products] = await pool.query("SELECT * FROM products WHERE MATCH(name, description) AGAINST (?) ORDER BY ratings ASC ", [query])
 
-    await redis.setex(cacheKey, process.env.REDIS_EXP_TIME, JSON.stringify(products));
+    const REDIS_EXP = parseInt(process.env.REDIS_EXP_TIME) || 3600;
+    await redis.setex(cacheKey, REDIS_EXP, JSON.stringify(products));
 
     res.status(StatusCodes.OK).json({ products: products, message: "here is the likely product" })
 }

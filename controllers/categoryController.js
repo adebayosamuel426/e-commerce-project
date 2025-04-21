@@ -31,9 +31,11 @@ const getCategoryById = async(req, res) => {
     // Check if the category is already cached in Redis
     const cacheCategory = await redis.get(cacheKey);
     if (cacheCategory) {
+        console.log("Redis HIT:", cacheKey);
         // If cached data exists, return it as JSON
         return res.status(StatusCodes.OK).json({ category: JSON.parse(cacheCategory), message: `Fetched category with ID: ${id} from cache` });
     }
+    console.log("Redis MISS:", cacheKey);
 
     const [category] = await pool.query('SELECT * FROM categories WHERE id =?', [id]);
     if (!category || category.length === 0) {
@@ -89,9 +91,13 @@ const getAllCategories = async(req, res) => {
     const cacheCategory = await redis.get(cacheKey);
 
     if (cacheCategory) {
+        console.log("Redis HIT:", cacheKey);
         // If cached data exists, return it as JSON
         return res.status(StatusCodes.OK).json({ categories: JSON.parse(cacheCategory), message: "Fetched categories from cache" });
     }
+
+    console.log("Redis MISS:", cacheKey);
+
     const [categories] = await pool.query('SELECT * FROM categories');
     // Cache the categories data for 1 hour
     await redis.setex(cacheKey, process.env.REDIS_EXP_TIME, JSON.stringify(categories));
@@ -104,10 +110,13 @@ const getCategoryProductsById = async(req, res) => {
     const cacheKey = `categoryProducts${id}`
     const cacheCategory = await redis.get(cacheKey);
     if (cacheCategory) {
+        console.log("Redis HIT:", cacheKey);
         // getting data from cache if it exists in the cache
         return res.status(StatusCodes.OK).json({ categoryProducts: JSON.parse(cacheCategory), message: "products in category gotten from cache" });
 
     }
+    console.log("Redis MISS:", cacheKey);
+
     const [categoryProducts] = await pool.query('SELECT p.id, p.name, p.price, p.stock, p.image_url, p.ratings, c.name AS category_name FROM products p JOIN categories c ON p.category_id = c.id WHERE c.id =?', [id]);
 
     // Cache the category products data for 1 hour

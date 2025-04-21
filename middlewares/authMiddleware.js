@@ -8,7 +8,18 @@ import { verifyJWT } from '../utils/tokenUtils.js';
 
 export const authenticateUser = async(req, res, next) => {
 
-    const token = req.cookies.token || "";
+    let token = "";
+    if (req.cookies && req.cookies.token) {
+        token = req.cookies.token;
+        console.log("Token from cookies:", token);
+    } else if (
+        req.headers &&
+        req.headers.authorization &&
+        req.headers.authorization.startsWith("Bearer ")
+    ) {
+        token = req.headers.authorization.split(" ")[1];
+        console.log("Token from header:", token);
+    }
     //console.log(token);
     console.log("Cookies received:", req.cookies);
     if (!token) throw new UnauthenticatedError("no token provided");

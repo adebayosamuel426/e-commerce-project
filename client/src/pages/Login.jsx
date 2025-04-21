@@ -8,7 +8,7 @@ export const action =
   async ({ request }) => {
     const formData = await request.formData();
     const data = Object.fromEntries(formData);
-
+    
     try {
       const response = await customFetch.post("/auth/login", data);
       queryClient.invalidateQueries();
@@ -17,10 +17,6 @@ export const action =
       if (role === "admin") {
         return redirect("/adminDashboard");
       } else if (role === "customer") {
-        localStorage.setItem(
-          "loggedInUser",
-          JSON.stringify(response.data.user)
-        );
         return redirect("/customerDashboard");
       }
     } catch (error) {

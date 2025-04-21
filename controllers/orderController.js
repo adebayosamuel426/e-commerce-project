@@ -135,8 +135,10 @@ const getAllOrders = async(req, res) => {
     const cacheOrders = await redis.get(cacheKey);
 
     if (cacheOrders) {
+        console.log("Redis HIT:", cacheKey);
         res.status(StatusCodes.OK).json({ orders: JSON.parse(cacheOrders), message: "these are all orders fetched from cache" });
     }
+    console.log("Redis MISS:", cacheKey);
     const [orders] = await pool.query("SELECT * FROM orders ORDER BY created_at DESC");
 
     //get all orders from database and store them in the cache
@@ -151,8 +153,11 @@ const getUserOrders = async(req, res) => {
     const cacheKey = `userOrders/${userId}`;
     const cacheOrders = await redis.get(cacheKey);
     if (cacheOrders) {
+        console.log("Redis HIT:", cacheKey);
         return res.status(StatusCodes.OK).json({ orders: JSON.parse(cacheOrders), message: "these are your orders fetched from cache" });
     }
+    console.log("Redis MISS:", cacheKey);
+
     const [orders] = await pool.query("SELECT * FROM orders WHERE user_id =? ORDER BY created_at DESC", [userId]);
 
     // geting user orders from the database and storing them in the cache
@@ -166,8 +171,12 @@ const getUserOrdersById = async(req, res) => {
     const cacheKey = `usersOrders:${userId}`;
     const cacheOrders = await redis.get(cacheKey);
     if (cacheOrders) {
+        console.log("Redis HIT:", cacheKey);
         return res.status(StatusCodes.OK).json({ orders: JSON.parse(cacheOrders), message: "these are the user's orders fetched from cache" });
     }
+
+    console.log("Redis MISS:", cacheKey);
+
     const [orders] = await pool.query("SELECT * FROM orders WHERE user_id =? ORDER BY created_at DESC", [userId]);
     // geting user orders from the database and storing them in the cache
     await redis.setex(cacheKey, process.env.REDIS_EXP_TIME, JSON.stringify(orders))
@@ -267,8 +276,11 @@ const getWeeklySales = async(req, res) => {
     const cacheKey = "weeklySales";
     const cacheWeeklySales = await redis.get(cacheKey);
     if (cacheWeeklySales) {
+        console.log("Redis HIT:", cacheKey);
         return res.status(StatusCodes.OK).json({ weeklySales: JSON.parse(cacheWeeklySales), message: "weekly sales fetched from cache" });
     }
+    console.log("Redis MISS:", cacheKey);
+
     const [sales] = await pool.query(
         `SELECT 
       DATE(created_at) AS date,

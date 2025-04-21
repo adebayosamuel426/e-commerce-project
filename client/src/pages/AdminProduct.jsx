@@ -38,7 +38,7 @@ const AdminProduct = () => {
     },
     onSuccess: () => {
       toast.success("Product deleted successfully");
-      queryClient.invalidateQueries(["products"]);
+      queryClient.invalidateQueries(["products"]); // invalidate product list
     },
   });
   const deleteProduct = async (id) => {

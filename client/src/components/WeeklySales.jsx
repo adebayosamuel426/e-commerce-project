@@ -10,7 +10,9 @@ import {
   LineElement,
 } from "chart.js";
 ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement);
-
+import dayjs from "dayjs";
+import customParseFormat from "dayjs/plugin/customParseFormat";
+dayjs.extend(customParseFormat);
 const fetchWeeklySales = async () => {
   const { data } = await customFetch.get("/orders/stats");
   return data.weeklySales;
@@ -23,9 +25,14 @@ const WeeklySales = () => {
 
   if (isLoading) return <p className='loading'></p>;
 
-  const labels = data.map((item) => new Date(item.date).toLocaleDateString());
+  //const labels = data.map((item) => new Date(item.date).toLocaleDateString());
   const salesData = data.map((item) => parseFloat(item.total_sales));
 
+  // Use custom format "DD/MM/YYYY"
+  const labels = data.map((item) => {
+    const parsed = dayjs(item.date, "DD/MM/YYYY");
+    return parsed.isValid() ? parsed.format("ddd, MMM D") : "Invalid Date";
+  });
   const chartData = {
     labels,
     datasets: [

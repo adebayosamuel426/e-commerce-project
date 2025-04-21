@@ -22,8 +22,10 @@ const getAllUsers = async(req, res) => {
     const cachedUsers = await redis.get(cacheKey);
     // getting data from cache if it is available
     if (cachedUsers) {
+        console.log("Redis HIT:", cacheKey);
         return res.status(StatusCodes.OK).json({ users: JSON.parse(cachedUsers), message: "these are all users fetched from cache" });
     }
+    console.log("Redis MISS:", cacheKey);
 
     // getting data from database if cache is not available
     const [users] = await pool.query('SELECT id, name, email, role, created_at FROM users')
@@ -98,9 +100,12 @@ const getUser = async(req, res) => {
     const cachedUser = await redis.get(cacheKey);
 
     if (cachedUser) {
+        console.log("Redis HIT:", cacheKey);
         // If cached data exists, return it as JSON
         return res.status(StatusCodes.OK).json({ user: JSON.parse(cachedUser), message: "Fetched user from cache" });
     }
+    console.log("Redis HIT:", cacheKey);
+
     const [user] = await pool.query('SELECT id, name, email, role, created_at, address FROM users WHERE id =?', [userId])
     if (!user || user.length === 0) {
         throw new NotFoundError("user not found");
@@ -118,9 +123,12 @@ const searchUsers = async(req, res) => {
     const cachedUsers = await redis.get(cacheKey);
 
     if (cachedUsers) {
+        console.log("Redis HIT:", cacheKey);
         // If cached data exists, return it as JSON
         return res.status(StatusCodes.OK).json({ users: JSON.parse(cachedUsers), message: "Fetched users from cache" });
     }
+    console.log("Redis MISS:", cacheKey);
+
     const [users] = await pool.query("SELECT * FROM users WHERE name LIKE ? OR email LIKE ? ORDER BY created_at ASC", [`%${query}%`, `%${query}%`])
         //store data in cache and set an expiration time
     await redis.setex(cacheKey, process.env.REDIS_EXP_TIME, JSON.stringify(users));
@@ -137,7 +145,7 @@ const updateUser = async(req, res) => {
             message: "Admins cannot change their own role.",
         });
     };
-    if (parseInt(id) === 2) {
+    if (parseInt(id) === 1) {
         return res.status(StatusCodes.FORBIDDEN).json({ message: "Cannot update the first admin account." });
     }
     // Fetch the existing user from the database
@@ -174,8 +182,10 @@ const getWeeklyUsers = async(req, res) => {
     const cacheWeeklyUsers = await redis.get(cacheKey)
         //if the weekly users are available in the caache fetch them
     if (cacheWeeklyUsers) {
+        console.log("Redis HIT:", cacheKey);
         res.status(StatusCodes.OK).json({ weeklyUsers: JSON.parse(cacheWeeklyUsers), message: "weekly user fetched from cache" })
     }
+    console.log("Redis MISS:", cacheKey);
 
     const [users] = await pool.query(
         `SELECT 

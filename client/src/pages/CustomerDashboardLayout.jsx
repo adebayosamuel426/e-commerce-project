@@ -54,7 +54,7 @@ const CustomerDashboardLayout = () => {
   const queryClient = useQueryClient();
 
   const dispatch = useDispatch();
-
+  loginUser(user);
   useEffect(() => {
     const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser")); // Assume user info is stored in localStorage
     if (loggedInUser?.id && loggedInUser?.role === "customer") {
@@ -86,6 +86,7 @@ const CustomerDashboardLayout = () => {
     },
   });
 
+  //removing from the which list
   const removeFromWishListMutation = useMutation({
     mutationFn: async (product) => {
       await customFetch.delete("/wishlist", {
@@ -93,7 +94,7 @@ const CustomerDashboardLayout = () => {
       });
     },
     onSuccess: () => {
-      queryClient.invalidateQueries([wishlist]); // invalidates and updates the wishlist
+      queryClient.invalidateQueries(["wishlist"]); // invalidates and updates the wishlist
       toast.success("item removed from wishlist");
     },
     onError: () => {
@@ -103,16 +104,23 @@ const CustomerDashboardLayout = () => {
     },
   });
 
+  const logoutMutation = useMutation({
+    mutationFn: async () => {
+      await customFetch.get("/auth/logout");
+    },
+    onSuccess: () => {
+      // Clear React Query state
+      queryClient.clear();
+    },
+  });
   //logout user
   const logout = async () => {
     try {
-      await customFetch.get("/auth/logout");
-      localStorage.removeItem("loggedInUser");
-      toast.success("user logging out");
-      queryClient.invalidateQueries();
-      navigate("/login");
+      await logoutMutation.mutateAsync();
+      // Force hard reload
+      window.location.href = "/login";
     } catch (error) {
-      toast.error("Failed to log out");
+      toast.error(error.response?.data?.message || "Failed to logout user");
     }
   };
 

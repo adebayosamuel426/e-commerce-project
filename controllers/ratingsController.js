@@ -125,9 +125,12 @@ const getAllRatings = async(req, res) => {
     const cachedRatings = await redis.get(cacheKey);
 
     if (cachedRatings) {
+        console.log("Redis HIT:", cacheKey);
         // If cached data exists, return it as JSON
         return res.status(StatusCodes.OK).json({ ratings: JSON.parse(cachedRatings), message: "Fetched from cache" });
     }
+    console.log("Redis MISS:", cacheKey);
+
     const [ratings] = await pool.query("SELECT * FROM ratings")
 
     // get all ratings from database and store them in the cache for 1 hour

@@ -54,7 +54,7 @@ const Product = () => {
     return isWish;
   };
 
-  //caching the review
+  //Fetching and caching Reviews
   const { data: review } = useQuery({
     queryKey: ["reviews", product.id],
     queryFn: async () => {
@@ -94,7 +94,7 @@ const Product = () => {
       queryClient.invalidateQueries(["allReviews"]);
     },
   });
-  //function to delete rating and review by writer
+  //function to delete rating and review by writer(customer)
   const handleDelete = async (id) => {
     try {
       await deleteRatingMutation.mutateAsync(id);
