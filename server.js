@@ -79,14 +79,8 @@ app.get('/', (req, res) => {
     res.send('Hello from e-commerce');
 })
 
-
-
-
-
-
 // Error handling middleware
 app.use(errorHandlerMiddleware);
-
 
 
 const port = process.env.PORT || 5050;
