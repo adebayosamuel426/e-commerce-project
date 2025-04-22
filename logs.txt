@@ -432,3 +432,8 @@ Connected to Upstash Redis!
 Server is running on port 5050
 Connected to Upstash Redis!
  Connected to MySQL Database!
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+Server is running on port 5050
+Connected to Upstash Redis!
+ Connected to MySQL Database!
