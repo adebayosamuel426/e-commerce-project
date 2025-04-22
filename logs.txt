@@ -422,3 +422,8 @@ GET /api/v1/products 200 23337 - 1712.458 ms
 Server is running on port 5050
 Connected to Upstash Redis!
  Connected to MySQL Database!
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+Server is running on port 5050
+Connected to Upstash Redis!
+ Connected to MySQL Database!
