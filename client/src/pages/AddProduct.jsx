@@ -1,3 +1,4 @@
+import React from "react";
 import { FormRow, SubmitBtn } from "../components";
 import { Form, redirect, useOutletContext } from "react-router-dom";
 import Wrapper from "../assets/wrapper/RegisterAndLoginPage";

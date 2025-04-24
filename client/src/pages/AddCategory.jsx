@@ -1,3 +1,4 @@
+import React from "react";
 import { SubmitBtn } from "../components";
 import { Form, useNavigate } from "react-router-dom";
 import Wrapper from "../assets/wrapper/RegisterAndLoginPage";
@@ -47,6 +48,7 @@ const AddCategory = () => {
             Enter the category name:
           </label>
           <input
+            id='name'
             name='name'
             type='text'
             className='form-input'
