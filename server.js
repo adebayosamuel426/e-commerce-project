@@ -26,26 +26,18 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true })); // Parses form data
 app.use(cookieParser());
 app.use(morgan(':method :url :status :res[content-length] - :response-time ms'));
-const allowedOrigins = [
-    "https://e-commerce-project-six-opal.vercel.app",
-    "http://localhost:5173" // if testing locally
-];
-
 app.use(cors({
-    origin: function(origin, callback) {
-        if (!origin || allowedOrigins.includes(origin)) {
-            callback(null, true);
-        } else {
-            callback(new Error("Not allowed by CORS"));
-        }
-    },
-    credentials: true
+    origin: process.env.CLIENT_URL,
+    credentials: true,
 }));
+
+
+
 // Socket.io setup
 const httpServer = createServer(app);
 const io = new Server(httpServer, {
     cors: {
-        origin: "https://e-commerce-project-six-opal.vercel.app",
+        origin: process.env.CLIENT_URL,
         credentials: true
     }
 });
