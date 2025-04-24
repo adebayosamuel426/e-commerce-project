@@ -1,0 +1,1107 @@
+ REDIS HITs: 111
+ REDIS MISSes: 56
+ Cache Effectiveness (Hit Rate): 66.47%
+ Request Frequencies:
+┌─────────┬────────┐
+│ (index) │ Values │
+├─────────┼────────┤
+│ 200     │ 156    │
+│ 201     │ 1      │
+│ 404     │ 3      │
+│ 500     │ 16     │
+│ -       │ 1      │
+└─────────┴────────┘
+[
+  {
+    method: 'POST',
+    url: '/api/v1/auth/login',
+    status: 200,
+    responseSize: 117,
+    responseTimeMs: 358.928
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/users/profile',
+    status: 200,
+    responseSize: 141,
+    responseTimeMs: 455.091
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/users/profile',
+    status: 200,
+    responseSize: 141,
+    responseTimeMs: 472.146
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/products',
+    status: 200,
+    responseSize: 23080,
+    responseTimeMs: 586.894
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/products',
+    status: 200,
+    responseSize: 23050,
+    responseTimeMs: 124.881
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/products',
+    status: 200,
+    responseSize: 23050,
+    responseTimeMs: 56.151
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/products',
+    status: 200,
+    responseSize: 23050,
+    responseTimeMs: 56.288
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/categories',
+    status: 200,
+    responseSize: 160,
+    responseTimeMs: 374.646
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/categories',
+    status: 200,
+    responseSize: 165,
+    responseTimeMs: 51.632
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/categories/1/products',
+    status: 200,
+    responseSize: 5279,
+    responseTimeMs: 351.482
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/categories/1/products',
+    status: 200,
+    responseSize: 5286,
+    responseTimeMs: 47.863
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/categories/1/products',
+    status: 200,
+    responseSize: 5286,
+    responseTimeMs: 35.977
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/categories/1/products',
+    status: 200,
+    responseSize: 5286,
+    responseTimeMs: 46.928
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/orders/user',
+    status: 200,
+    responseSize: 1250,
+    responseTimeMs: 601.995
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/orders/user',
+    status: 200,
+    responseSize: 1269,
+    responseTimeMs: 254.998
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/orders/user',
+    status: 200,
+    responseSize: 1269,
+    responseTimeMs: 340.793
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/orders/user',
+    status: 200,
+    responseSize: 1269,
+    responseTimeMs: 286.957
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/orders/user',
+    status: 200,
+    responseSize: 1269,
+    responseTimeMs: 267.672
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/orders/user',
+    status: 200,
+    responseSize: 1269,
+    responseTimeMs: 268.391
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/wishlist',
+    status: 200,
+    responseSize: 704,
+    responseTimeMs: 870.511
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/wishlist',
+    status: 200,
+    responseSize: 710,
+    responseTimeMs: 294.257
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/wishlist',
+    status: 200,
+    responseSize: 710,
+    responseTimeMs: 355.448
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/wishlist',
+    status: 200,
+    responseSize: 710,
+    responseTimeMs: 278.481
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/wishlist',
+    status: 200,
+    responseSize: 710,
+    responseTimeMs: 457.982
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/auth/logout',
+    status: 200,
+    responseSize: 30,
+    responseTimeMs: 5.644
+  },
+  {
+    method: 'POST',
+    url: '/api/v1/auth/login',
+    status: 200,
+    responseSize: 122,
+    responseTimeMs: 332.306
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/users',
+    status: 200,
+    responseSize: 525,
+    responseTimeMs: 512.955
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/users',
+    status: 200,
+    responseSize: 544,
+    responseTimeMs: 259.646
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/users',
+    status: 200,
+    responseSize: 544,
+    responseTimeMs: 275.757
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/users/profile',
+    status: 200,
+    responseSize: 154,
+    responseTimeMs: 479.819
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/users/profile',
+    status: 200,
+    responseSize: 154,
+    responseTimeMs: 452.136
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/products',
+    status: 200,
+    responseSize: 23050,
+    responseTimeMs: 57.608
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/products',
+    status: 200,
+    responseSize: 23050,
+    responseTimeMs: 67.028
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/categories',
+    status: 200,
+    responseSize: 165,
+    responseTimeMs: 71.788
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/categories',
+    status: 200,
+    responseSize: 165,
+    responseTimeMs: 35.103
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/categories/1/products',
+    status: 200,
+    responseSize: 5286,
+    responseTimeMs: 86.454
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/categories/1/products',
+    status: 200,
+    responseSize: 5286,
+    responseTimeMs: 38.637
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/orders',
+    status: 200,
+    responseSize: 1249,
+    responseTimeMs: 515.654
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/orders',
+    status: 200,
+    responseSize: 1268,
+    responseTimeMs: 284.264
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/orders',
+    status: 200,
+    responseSize: 1268,
+    responseTimeMs: 264.19
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/orders/user/2',
+    status: 200,
+    responseSize: 53,
+    responseTimeMs: 594.164
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/orders/stats',
+    status: 200,
+    responseSize: 129,
+    responseTimeMs: 686.064
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/orders/stats',
+    status: 200,
+    responseSize: 142,
+    responseTimeMs: 330.354
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/orders/stats',
+    status: 200,
+    responseSize: 142,
+    responseTimeMs: 275.847
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/ratings',
+    status: 200,
+    responseSize: 172,
+    responseTimeMs: 608.396
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/ratings/18',
+    status: 200,
+    responseSize: 52,
+    responseTimeMs: 529.208
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/ratings',
+    status: 200,
+    responseSize: 169,
+    responseTimeMs: 261.055
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/ratings',
+    status: 200,
+    responseSize: 169,
+    responseTimeMs: 274.394
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/ratings/18',
+    status: 200,
+    responseSize: 59,
+    responseTimeMs: 309.862
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/ratings',
+    status: 200,
+    responseSize: 169,
+    responseTimeMs: 400.121
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/ratings',
+    status: 200,
+    responseSize: 169,
+    responseTimeMs: 318.244
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/ratings',
+    status: 200,
+    responseSize: 169,
+    responseTimeMs: 346.877
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/users',
+    status: 200,
+    responseSize: 544,
+    responseTimeMs: 376.229
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/categories',
+    status: 200,
+    responseSize: 165,
+    responseTimeMs: 91.793
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/products',
+    status: 200,
+    responseSize: 23337,
+    responseTimeMs: 617.78
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/categories',
+    status: 200,
+    responseSize: 165,
+    responseTimeMs: 237723.767
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/products',
+    status: 200,
+    responseSize: 23307,
+    responseTimeMs: 237784.901
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/categories',
+    status: 200,
+    responseSize: 165,
+    responseTimeMs: 141.422
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/products',
+    status: 200,
+    responseSize: 23307,
+    responseTimeMs: 165.925
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/products',
+    status: 200,
+    responseSize: 23307,
+    responseTimeMs: 1344373.505
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/categories',
+    status: 200,
+    responseSize: 160,
+    responseTimeMs: 3363.348
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/products',
+    status: 200,
+    responseSize: 23337,
+    responseTimeMs: 3747.806
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/categories',
+    status: 200,
+    responseSize: 165,
+    responseTimeMs: 102.135
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/products',
+    status: 200,
+    responseSize: 23307,
+    responseTimeMs: 191.729
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/categories',
+    status: 200,
+    responseSize: 165,
+    responseTimeMs: 125.721
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/products',
+    status: 200,
+    responseSize: 23307,
+    responseTimeMs: 214.322
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/categories',
+    status: 200,
+    responseSize: 165,
+    responseTimeMs: 79.598
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/products',
+    status: 200,
+    responseSize: 23307,
+    responseTimeMs: 72.725
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/categories',
+    status: 200,
+    responseSize: 165,
+    responseTimeMs: 44.357
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/products',
+    status: 200,
+    responseSize: 23307,
+    responseTimeMs: 57.625
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/categories',
+    status: 200,
+    responseSize: 160,
+    responseTimeMs: 120573.816
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/products',
+    status: 200,
+    responseSize: 23337,
+    responseTimeMs: 120827.961
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/categories',
+    status: 200,
+    responseSize: 165,
+    responseTimeMs: 65.685
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/products',
+    status: 200,
+    responseSize: 23307,
+    responseTimeMs: 100.435
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/categories',
+    status: 200,
+    responseSize: 160,
+    responseTimeMs: 344.132
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/products',
+    status: 200,
+    responseSize: 23337,
+    responseTimeMs: 1865.23
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/categories',
+    status: 200,
+    responseSize: 165,
+    responseTimeMs: 28148.44
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/products',
+    status: 200,
+    responseSize: 23307,
+    responseTimeMs: 28178.934
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/categories',
+    status: 200,
+    responseSize: 160,
+    responseTimeMs: 1848.445
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/products',
+    status: 200,
+    responseSize: 23337,
+    responseTimeMs: 2160.594
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/categories',
+    status: 200,
+    responseSize: 165,
+    responseTimeMs: 111.276
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/products',
+    status: 200,
+    responseSize: 23307,
+    responseTimeMs: 144.369
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/categories',
+    status: 200,
+    responseSize: 165,
+    responseTimeMs: 65.776
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/products',
+    status: 200,
+    responseSize: 23307,
+    responseTimeMs: 62.019
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/categories',
+    status: 200,
+    responseSize: 165,
+    responseTimeMs: 88895.019
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/products',
+    status: 200,
+    responseSize: 23307,
+    responseTimeMs: 89120.967
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/categories',
+    status: 200,
+    responseSize: 165,
+    responseTimeMs: 42.415
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/products',
+    status: 200,
+    responseSize: 23307,
+    responseTimeMs: 50.101
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/categories',
+    status: 200,
+    responseSize: 165,
+    responseTimeMs: 76.596
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/products',
+    status: 200,
+    responseSize: 23307,
+    responseTimeMs: 59.312
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/categories',
+    status: 200,
+    responseSize: 165,
+    responseTimeMs: 65.471
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/products',
+    status: 200,
+    responseSize: 23307,
+    responseTimeMs: 48.118
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/categories',
+    status: 200,
+    responseSize: 165,
+    responseTimeMs: 59.186
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/products',
+    status: 200,
+    responseSize: 23307,
+    responseTimeMs: 60.421
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/categories',
+    status: 200,
+    responseSize: 160,
+    responseTimeMs: 1556.591
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/products',
+    status: 200,
+    responseSize: 23337,
+    responseTimeMs: 1712.458
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/categories',
+    status: 200,
+    responseSize: 165,
+    responseTimeMs: 64.659
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/products',
+    status: 200,
+    responseSize: 23307,
+    responseTimeMs: 89.935
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/products',
+    status: 200,
+    responseSize: 23337,
+    responseTimeMs: 27913.21
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/products',
+    status: 200,
+    responseSize: 23307,
+    responseTimeMs: 83.98
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/categories',
+    status: 200,
+    responseSize: 160,
+    responseTimeMs: 321.077
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/categories',
+    status: 200,
+    responseSize: 165,
+    responseTimeMs: 130.342
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/products',
+    status: 200,
+    responseSize: 23307,
+    responseTimeMs: 134.621
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/categories',
+    status: 200,
+    responseSize: 165,
+    responseTimeMs: 602823.814
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/categories',
+    status: 200,
+    responseSize: 160,
+    responseTimeMs: 2051.5
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/products',
+    status: 200,
+    responseSize: 23337,
+    responseTimeMs: 2223.432
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/categories',
+    status: 200,
+    responseSize: 165,
+    responseTimeMs: 37.412
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/products',
+    status: 200,
+    responseSize: 23307,
+    responseTimeMs: 87.687
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/categories',
+    status: 200,
+    responseSize: 165,
+    responseTimeMs: 65.214
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/products',
+    status: 200,
+    responseSize: 23307,
+    responseTimeMs: 110.716
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/categories',
+    status: 200,
+    responseSize: 165,
+    responseTimeMs: 116238.325
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/products',
+    status: 200,
+    responseSize: 23307,
+    responseTimeMs: 116305.307
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/categories',
+    status: 200,
+    responseSize: 160,
+    responseTimeMs: 961691.929
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/products',
+    status: 200,
+    responseSize: 23337,
+    responseTimeMs: 962093.853
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/categories',
+    status: 200,
+    responseSize: 165,
+    responseTimeMs: 86133.429
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/products',
+    status: 200,
+    responseSize: 23307,
+    responseTimeMs: 86211.44
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/categories',
+    status: 200,
+    responseSize: 165,
+    responseTimeMs: 76.595
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/products',
+    status: 200,
+    responseSize: 23307,
+    responseTimeMs: 53.313
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/categories',
+    status: 200,
+    responseSize: 165,
+    responseTimeMs: 96.616
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/products',
+    status: 200,
+    responseSize: 23307,
+    responseTimeMs: 86.581
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/categories',
+    status: 200,
+    responseSize: 160,
+    responseTimeMs: 148422.292
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/products',
+    status: 200,
+    responseSize: 23337,
+    responseTimeMs: 148762.023
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/categories',
+    status: 200,
+    responseSize: 165,
+    responseTimeMs: 67.346
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/products',
+    status: 200,
+    responseSize: 23307,
+    responseTimeMs: 119.093
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/categories',
+    status: 200,
+    responseSize: 165,
+    responseTimeMs: 47.235
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/products',
+    status: 200,
+    responseSize: 23307,
+    responseTimeMs: 57.19
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/categories',
+    status: 200,
+    responseSize: 165,
+    responseTimeMs: 62.417
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/products',
+    status: 200,
+    responseSize: 23307,
+    responseTimeMs: 65.237
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/categories',
+    status: 200,
+    responseSize: 160,
+    responseTimeMs: 1647052.549
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/products',
+    status: 200,
+    responseSize: 23337,
+    responseTimeMs: 1647267.858
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/categories',
+    status: 200,
+    responseSize: 165,
+    responseTimeMs: 59.238
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/products',
+    status: 200,
+    responseSize: 23307,
+    responseTimeMs: 84.191
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/categories',
+    status: 200,
+    responseSize: 165,
+    responseTimeMs: 118.865
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/products',
+    status: 200,
+    responseSize: 23307,
+    responseTimeMs: 101.278
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/categories',
+    status: 200,
+    responseSize: 165,
+    responseTimeMs: 58.299
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/products',
+    status: 200,
+    responseSize: 23307,
+    responseTimeMs: 62.121
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/categories',
+    status: 200,
+    responseSize: 165,
+    responseTimeMs: 121.664
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/products',
+    status: 200,
+    responseSize: 23307,
+    responseTimeMs: 116.459
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/categories',
+    status: 200,
+    responseSize: 160,
+    responseTimeMs: 367.232
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/products',
+    status: 200,
+    responseSize: 23337,
+    responseTimeMs: 569.836
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/categories',
+    status: 200,
+    responseSize: 165,
+    responseTimeMs: 754289.263
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/products',
+    status: 200,
+    responseSize: 23307,
+    responseTimeMs: 754404.155
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/categories',
+    status: 200,
+    responseSize: 165,
+    responseTimeMs: 63.478
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/products',
+    status: 200,
+    responseSize: 23307,
+    responseTimeMs: 72.214
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/categories',
+    status: 200,
+    responseSize: 165,
+    responseTimeMs: 152553.116
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/products',
+    status: 200,
+    responseSize: 23307,
+    responseTimeMs: 152588.661
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/categories',
+    status: 200,
+    responseSize: 160,
+    responseTimeMs: 1773.437
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/products',
+    status: 200,
+    responseSize: 23337,
+    responseTimeMs: 2178.139
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/categories',
+    status: 200,
+    responseSize: 165,
+    responseTimeMs: 228796.41
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/products',
+    status: 200,
+    responseSize: 23307,
+    responseTimeMs: 228823.794
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/categories',
+    status: 200,
+    responseSize: 165,
+    responseTimeMs: 65.13
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/products',
+    status: 200,
+    responseSize: 23307,
+    responseTimeMs: 102.577
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/categories',
+    status: 200,
+    responseSize: 165,
+    responseTimeMs: 66.782
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/products',
+    status: 200,
+    responseSize: 23307,
+    responseTimeMs: 102.76
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/categories',
+    status: 200,
+    responseSize: 160,
+    responseTimeMs: 453.453
+  },
+  {
+    method: 'GET',
+    url: '/api/v1/products',
+    status: 200,
+    responseSize: 23337,
+    responseTimeMs: 1657.203
+  }
+]

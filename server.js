@@ -26,13 +26,21 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true })); // Parses form data
 app.use(cookieParser());
 app.use(morgan(':method :url :status :res[content-length] - :response-time ms'));
+const allowedOrigins = [
+    "https://e-commerce-project-six-opal.vercel.app",
+    "http://localhost:5173" // if testing locally
+];
+
 app.use(cors({
-    origin: process.env.CLIENT_URL,
-    credentials: true,
+    origin: function(origin, callback) {
+        if (!origin || allowedOrigins.includes(origin)) {
+            callback(null, true);
+        } else {
+            callback(new Error("Not allowed by CORS"));
+        }
+    },
+    credentials: true
 }));
-
-
-
 // Socket.io setup
 const httpServer = createServer(app);
 const io = new Server(httpServer, {
@@ -83,7 +91,7 @@ app.get('/', (req, res) => {
 app.use(errorHandlerMiddleware);
 
 
-const port = process.env.PORT || 5050;
+const port = process.env.PORT || 5020;
 httpServer.listen(port, () => {
 
     console.log(`Server is running on port ${port}`);

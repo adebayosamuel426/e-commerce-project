@@ -437,3 +437,412 @@ Connected to Upstash Redis!
 Server is running on port 5050
 Connected to Upstash Redis!
  Connected to MySQL Database!
+Redis HIT: allCategories
+GET /api/v1/categories 200 165 - 64.659 ms
+Redis HIT: all_products
+GET /api/v1/products 200 23307 - 89.935 ms
+Connected to Upstash Redis!
+Redis MISS: allCategories
+Redis MISS: all_products
+GET /api/v1/products 200 23337 - 27913.210 ms
+ Error handler triggered: read ETIMEDOUT
+ Error: read ETIMEDOUT
+GET /api/v1/categories 500 59 - 87756.647 ms
+Redis MISS: allCategories
+Redis HIT: all_products
+GET /api/v1/products 200 23307 - 83.980 ms
+GET /api/v1/categories 200 160 - 321.077 ms
+Redis HIT: allCategories
+GET /api/v1/categories 200 165 - 130.342 ms
+Redis HIT: all_products
+GET /api/v1/products 200 23307 - 134.621 ms
+Connected to Upstash Redis!
+Redis HIT: allCategories
+GET /api/v1/categories 200 165 - 602823.814 ms
+Redis MISS: all_products
+ Error handler triggered: read ETIMEDOUT
+ Error: read ETIMEDOUT
+GET /api/v1/products 500 59 - 677757.905 ms
+Redis MISS: allCategories
+Redis MISS: all_products
+GET /api/v1/categories 200 160 - 2051.500 ms
+GET /api/v1/products 200 23337 - 2223.432 ms
+Redis HIT: allCategories
+GET /api/v1/categories 200 165 - 37.412 ms
+Redis HIT: all_products
+GET /api/v1/products 200 23307 - 87.687 ms
+Connected to Upstash Redis!
+Connected to Upstash Redis!
+Redis HIT: allCategories
+GET /api/v1/categories 200 165 - 65.214 ms
+Redis HIT: all_products
+GET /api/v1/products 200 23307 - 110.716 ms
+Connected to Upstash Redis!
+Redis HIT: allCategories
+GET /api/v1/categories 200 165 - 116238.325 ms
+Redis HIT: all_products
+GET /api/v1/products 200 23307 - 116305.307 ms
+Connected to Upstash Redis!
+Redis MISS: allCategories
+Redis MISS: all_products
+ Error handler triggered: read ETIMEDOUT
+ Error: read ETIMEDOUT
+GET /api/v1/categories 500 59 - 610354.965 ms
+ Error handler triggered: read ETIMEDOUT
+ Error: read ETIMEDOUT
+GET /api/v1/products 500 59 - 612060.585 ms
+Connected to Upstash Redis!
+Redis MISS: allCategories
+Redis MISS: all_products
+GET /api/v1/categories 200 160 - 961691.929 ms
+GET /api/v1/products 200 23337 - 962093.853 ms
+Connected to Upstash Redis!
+Redis HIT: allCategories
+GET /api/v1/categories 200 165 - 86133.429 ms
+Redis HIT: all_products
+GET /api/v1/products 200 23307 - 86211.440 ms
+Redis HIT: allCategories
+GET /api/v1/categories 200 165 - 76.595 ms
+Redis HIT: all_products
+GET /api/v1/products 200 23307 - 53.313 ms
+Redis HIT: allCategories
+GET /api/v1/categories 200 165 - 96.616 ms
+Redis HIT: all_products
+GET /api/v1/products 200 23307 - 86.581 ms
+Redis MISS: allCategories
+Redis MISS: all_products
+ Error handler triggered: read ETIMEDOUT
+ Error: read ETIMEDOUT
+GET /api/v1/categories 500 59 - 545804.244 ms
+ Error handler triggered: read ETIMEDOUT
+ Error: read ETIMEDOUT
+GET /api/v1/products 500 59 - 555972.475 ms
+Connected to Upstash Redis!
+Redis MISS: allCategories
+Redis MISS: all_products
+GET /api/v1/categories 200 160 - 148422.292 ms
+GET /api/v1/products 200 23337 - 148762.023 ms
+Redis HIT: allCategories
+GET /api/v1/categories 200 165 - 67.346 ms
+Redis HIT: all_products
+GET /api/v1/products 200 23307 - 119.093 ms
+Redis HIT: allCategories
+GET /api/v1/categories 200 165 - 47.235 ms
+Redis HIT: all_products
+GET /api/v1/products 200 23307 - 57.190 ms
+Redis HIT: allCategories
+GET /api/v1/categories 200 165 - 62.417 ms
+Redis HIT: all_products
+GET /api/v1/products 200 23307 - 65.237 ms
+Connected to Upstash Redis!
+Redis MISS: allCategories
+Redis MISS: all_products
+ Error handler triggered: read ETIMEDOUT
+ Error: read ETIMEDOUT
+GET /api/v1/products 500 59 - 2056864.446 ms
+ Error handler triggered: read ETIMEDOUT
+ Error: read ETIMEDOUT
+GET /api/v1/categories 500 59 - 2057349.967 ms
+Connected to Upstash Redis!
+Redis MISS: allCategories
+Redis MISS: all_products
+GET /api/v1/categories 200 160 - 1647052.549 ms
+GET /api/v1/products 200 23337 - 1647267.858 ms
+Redis HIT: allCategories
+GET /api/v1/categories 200 165 - 59.238 ms
+Redis HIT: all_products
+GET /api/v1/products 200 23307 - 84.191 ms
+Redis HIT: allCategories
+GET /api/v1/categories 200 165 - 118.865 ms
+Redis HIT: all_products
+GET /api/v1/products 200 23307 - 101.278 ms
+Redis HIT: allCategories
+GET /api/v1/categories 200 165 - 58.299 ms
+Redis HIT: all_products
+GET /api/v1/products 200 23307 - 62.121 ms
+Redis HIT: allCategories
+GET /api/v1/categories 200 165 - 121.664 ms
+Redis HIT: all_products
+GET /api/v1/products 200 23307 - 116.459 ms
+Redis MISS: allCategories
+Redis MISS: all_products
+GET /api/v1/categories 200 160 - 367.232 ms
+GET /api/v1/products 200 23337 - 569.836 ms
+Connected to Upstash Redis!
+Redis HIT: allCategories
+GET /api/v1/categories 200 165 - 754289.263 ms
+Redis HIT: all_products
+GET /api/v1/products 200 23307 - 754404.155 ms
+Redis HIT: allCategories
+GET /api/v1/categories 200 165 - 63.478 ms
+Redis HIT: all_products
+GET /api/v1/products 200 23307 - 72.214 ms
+Connected to Upstash Redis!
+Redis HIT: allCategories
+GET /api/v1/categories 200 165 - 152553.116 ms
+Redis HIT: all_products
+GET /api/v1/products 200 23307 - 152588.661 ms
+Connected to Upstash Redis!
+Redis MISS: allCategories
+Redis MISS: all_products
+ Error handler triggered: read ETIMEDOUT
+ Error: read ETIMEDOUT
+GET /api/v1/products 500 59 - 385564.020 ms
+ Error handler triggered: read ETIMEDOUT
+ Error: read ETIMEDOUT
+GET /api/v1/categories 500 59 - 387120.378 ms
+Redis MISS: allCategories
+Redis MISS: all_products
+GET /api/v1/categories 200 160 - 1773.437 ms
+GET /api/v1/products 200 23337 - 2178.139 ms
+Connected to Upstash Redis!
+Redis HIT: allCategories
+GET /api/v1/categories 200 165 - 228796.410 ms
+Redis HIT: all_products
+GET /api/v1/products 200 23307 - 228823.794 ms
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+Server is running on port 5050
+Connected to Upstash Redis!
+ Connected to MySQL Database!
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+Server is running on port 5050
+Connected to Upstash Redis!
+ Connected to MySQL Database!
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+Server is running on port 5050
+Connected to Upstash Redis!
+ Connected to MySQL Database!
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+Server is running on port 5050
+Connected to Upstash Redis!
+ Connected to MySQL Database!
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+Server is running on port 5050
+Connected to Upstash Redis!
+ Connected to MySQL Database!
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+Server is running on port 5050
+Connected to Upstash Redis!
+ Connected to MySQL Database!
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+Server is running on port 5050
+Connected to Upstash Redis!
+ Connected to MySQL Database!
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+Server is running on port 5050
+Connected to Upstash Redis!
+ Connected to MySQL Database!
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+Server is running on port 5050
+Connected to Upstash Redis!
+ Connected to MySQL Database!
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+Server is running on port 5050
+Connected to Upstash Redis!
+ Connected to MySQL Database!
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+Server is running on port 5050
+Connected to Upstash Redis!
+ Connected to MySQL Database!
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+Server is running on port 5050
+Connected to Upstash Redis!
+ Connected to MySQL Database!
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+Server is running on port 5050
+Connected to Upstash Redis!
+ Connected to MySQL Database!
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+Server is running on port 5050
+Connected to Upstash Redis!
+ Connected to MySQL Database!
+Redis HIT: allCategories
+GET /api/v1/categories 200 165 - 65.130 ms
+Redis HIT: all_products
+GET /api/v1/products 200 23307 - 102.577 ms
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+Server is running on port 5050
+Connected to Upstash Redis!
+ Connected to MySQL Database!
+Redis HIT: allCategories
+GET /api/v1/categories 200 165 - 66.782 ms
+Redis HIT: all_products
+GET /api/v1/products 200 23307 - 102.760 ms
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+Server is running on port 5050
+Connected to Upstash Redis!
+ Connected to MySQL Database!
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+Server is running on port 5050
+Connected to Upstash Redis!
+ Connected to MySQL Database!
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+Server is running on port 5050
+Connected to Upstash Redis!
+ Connected to MySQL Database!
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+Server is running on port 5050
+Connected to Upstash Redis!
+ Connected to MySQL Database!
+Redis MISS: allCategories
+Redis MISS: all_products
+GET /api/v1/categories 200 160 - 453.453 ms
+GET /api/v1/products 200 23337 - 1657.203 ms
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+Server is running on port 5050
+Connected to Upstash Redis!
+ Connected to MySQL Database!
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+Server is running on port 5050
+Connected to Upstash Redis!
+ Connected to MySQL Database!
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+Server is running on port 5050
+Connected to Upstash Redis!
+ Connected to MySQL Database!
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+Server is running on port 5050
+Connected to Upstash Redis!
+ Connected to MySQL Database!
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+Server is running on port 5050
+Connected to Upstash Redis!
+ Connected to MySQL Database!
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+Server is running on port 5050
+Connected to Upstash Redis!
+ Connected to MySQL Database!
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+Server is running on port 5050
+Connected to Upstash Redis!
+ Connected to MySQL Database!
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+Server is running on port 5050
+Connected to Upstash Redis!
+ Connected to MySQL Database!
+Redis HIT: allCategories
+GET /api/v1/categories 200 165 - 227.633 ms
+Redis HIT: all_products
+GET /api/v1/products 200 23307 - 312.052 ms
+Redis HIT: allCategories
+GET /api/v1/categories 200 165 - 77.552 ms
+Redis HIT: all_products
+GET /api/v1/products 200 23307 - 61.683 ms
+Redis MISS: allCategories
+Redis MISS: all_products
+GET /api/v1/categories 200 160 - 508.923 ms
+GET /api/v1/products 200 23337 - 1947.304 ms
+Connected to Upstash Redis!
+Redis HIT: allCategories
+GET /api/v1/categories 200 165 - 1021091.723 ms
+Redis HIT: all_products
+GET /api/v1/products 200 23307 - 1021144.609 ms
+Connected to Upstash Redis!
+Redis MISS: allCategories
+Redis MISS: all_products
+ Error handler triggered: read ETIMEDOUT
+ Error: read ETIMEDOUT
+GET /api/v1/products 500 59 - 275962.122 ms
+ Error handler triggered: read ETIMEDOUT
+ Error: read ETIMEDOUT
+GET /api/v1/categories 500 59 - 306692.309 ms
+Redis MISS: allCategories
+Redis MISS: all_products
+GET /api/v1/categories 200 160 - 1689.541 ms
+GET /api/v1/products 200 23337 - 2061.458 ms
+Connected to Upstash Redis!
+Redis HIT: allCategories
+GET /api/v1/categories 200 165 - 35281.134 ms
+Redis HIT: all_products
+GET /api/v1/products 200 23307 - 35306.498 ms
+Redis HIT: allCategories
+GET /api/v1/categories 200 165 - 86.493 ms
+Redis HIT: all_products
+GET /api/v1/products 200 23307 - 91.331 ms
+Connected to Upstash Redis!
+Redis MISS: allCategories
+Redis MISS: all_products
+ Error handler triggered: read ETIMEDOUT
+ Error: read ETIMEDOUT
+GET /api/v1/products 500 59 - 1099899.359 ms
+ Error handler triggered: read ETIMEDOUT
+ Error: read ETIMEDOUT
+GET /api/v1/categories 500 59 - 1102071.192 ms
+Connected to Upstash Redis!
+Redis MISS: allCategories
+Redis MISS: all_products
+GET /api/v1/categories 200 160 - 58666.378 ms
+GET /api/v1/products 200 23337 - 58830.387 ms
+Redis HIT: allCategories
+GET /api/v1/categories 200 165 - 64.594 ms
+Redis HIT: all_products
+GET /api/v1/products 200 23307 - 113.683 ms
+Redis HIT: allCategories
+GET /api/v1/categories 200 165 - 102.165 ms
+Redis HIT: all_products
+GET /api/v1/products 200 23307 - 77.634 ms
+Connected to Upstash Redis!
+Redis HIT: allCategories
+GET /api/v1/categories 200 165 - 43984.068 ms
+Redis HIT: all_products
+GET /api/v1/products 200 23307 - 43987.943 ms
+Redis MISS: allCategories
+Redis MISS: all_products
+GET /api/v1/categories 200 160 - 1522.134 ms
+GET /api/v1/products 200 23337 - 1796.271 ms
+Connected to Upstash Redis!
+Redis MISS: allCategories
+Redis MISS: all_products
+ Error handler triggered: read ETIMEDOUT
+ Error: read ETIMEDOUT
+GET /api/v1/categories 500 59 - 2998894.976 ms
+ Error handler triggered: read ETIMEDOUT
+ Error: read ETIMEDOUT
+GET /api/v1/products 500 59 - 3002221.946 ms
+Connected to Upstash Redis!
+Redis MISS: allCategories
+Redis MISS: all_products
+GET /api/v1/categories 200 160 - 699130.145 ms
+GET /api/v1/products 200 23337 - 699175.897 ms
+Redis HIT: allCategories
+GET /api/v1/categories 200 165 - 42.520 ms
+Redis HIT: all_products
+GET /api/v1/products 200 23307 - 74.489 ms
+Connected to Upstash Redis!
+Redis HIT: allCategories
+GET /api/v1/categories 200 165 - 90440.241 ms
+Redis HIT: all_products
+GET /api/v1/products 200 23307 - 90478.130 ms
+ Error handler triggered: Reached the max retries per request limit (which is 20). Refer to "maxRetriesPerRequest" option for details.
+ Error: Reached the max retries per request limit (which is 20). Refer to "maxRetriesPerRequest" option for details.
+ Error handler triggered: Reached the max retries per request limit (which is 20). Refer to "maxRetriesPerRequest" option for details.
+ Error: Reached the max retries per request limit (which is 20). Refer to "maxRetriesPerRequest" option for details.
+GET /api/v1/categories 500 59 - 1274699.239 ms
+GET /api/v1/products 500 59 - 1274688.166 ms
